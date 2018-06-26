@@ -20,7 +20,7 @@ lint:
 bundle-stable:
   stage: deploy
   only:
-  - master@antora/antora-ui-default
+  - master@gmarpons/antora-ui-default
   cache: *pull_cache
   script:
   - *run_yarn
@@ -43,7 +43,7 @@ bundle-dev:
 pages:
   stage: deploy
   only:
-  - master@antora/antora-ui-default
+  - master@gmarpons/antora-ui-default
   cache: *pull_cache
   script:
   - *run_yarn
