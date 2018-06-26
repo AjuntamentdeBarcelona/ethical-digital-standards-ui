@@ -307,7 +307,7 @@
 .doc ol {
   margin: 0;
   padding: 0 0 0 2rem;
-  list-style: none;
+  list-style: decimal;
   counter-reset: ordered-list;
 }
 
@@ -327,9 +327,9 @@
   position: absolute;
 }
 
-.doc ol.arabic > li::before {
-  content: "." counter(ordered-list);
-}
+/* .doc ol.arabic > li::before { */
+/*   content: "." counter(ordered-list); */
+/* } */
 
 /* NOTE decimal-leading-zero not yet supported; @counter-style not supported in Chrome */
 
