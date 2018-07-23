@@ -311,6 +311,26 @@
   counter-reset: ordered-list;
 }
 
+.doc ol.loweralpha {
+  list-style: lower-alpha;
+}
+
+.doc ol.lowergreek {
+  list-style: lower-greek;
+}
+
+.doc ol.lowerroman {
+  list-style: lower-roman;
+}
+
+.doc ol.upperalpha {
+  list-style: upper-alpha;
+}
+
+.doc ol.upperroman {
+  list-style: upper-roman;
+}
+
 .doc ol > li {
   counter-increment: ordered-list;
 }
@@ -333,25 +353,25 @@
 
 /* NOTE decimal-leading-zero not yet supported; @counter-style not supported in Chrome */
 
-.doc ol.loweralpha > li::before {
-  content: "." counter(ordered-list, lower-alpha);
-}
+/* .doc ol.loweralpha > li::before { */
+/*   content: "." counter(ordered-list, lower-alpha); */
+/* } */
 
-.doc ol.lowergreek > li::before {
-  content: "." counter(ordered-list, lower-greek);
-}
+/* .doc ol.lowergreek > li::before { */
+/*   content: "." counter(ordered-list, lower-greek); */
+/* } */
 
-.doc ol.lowerroman > li::before {
-  content: "." counter(ordered-list, lower-roman);
-}
+/* .doc ol.lowerroman > li::before { */
+/*   content: "." counter(ordered-list, lower-roman); */
+/* } */
 
-.doc ol.upperalpha > li::before {
-  content: "." counter(ordered-list, upper-alpha);
-}
+/* .doc ol.upperalpha > li::before { */
+/*   content: "." counter(ordered-list, upper-alpha); */
+/* } */
 
-.doc ol.upperroman > li::before {
-  content: "." counter(ordered-list, upper-roman);
-}
+/* .doc ol.upperroman > li::before { */
+/*   content: "." counter(ordered-list, upper-roman); */
+/* } */
 
 .doc ul.checklist {
   padding-left: 0.5rem;
