@@ -16,6 +16,7 @@ const postcssCalc = require('postcss-calc')
 const postcssImport = require('postcss-import')
 const postcssUrl = require('postcss-url')
 const postcssVar = require('postcss-custom-properties')
+const easyImport = require('postcss-easy-import')
 const precss = require('precss')
 const uglify = require('gulp-uglify')
 const vfs = require('vinyl-fs')
@@ -45,6 +46,7 @@ module.exports = (src, dest) => {
     ]),
     postcssVar(),
     postcssCalc(),
+    easyImport({ prefix: '_', extensions: ['.css', '.scss'] }),
     precss(),
     autoprefixer({ browsers: ['last 2 versions'] }),
     cssnano({ preset: 'default' }),
