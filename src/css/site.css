@@ -1,14 +1,18 @@
-@import "typeface-roboto.css";
-@import "typeface-roboto-mono.css";
-@import "base.css";
-@import "main.css";
-@import "navigation.css";
-@import "navigation-menu.css";
-@import "navigation-explore.css";
-@import "toolbar.css";
-@import "breadcrumbs.css";
-@import "page-versions.css";
-@import "doc.css";
-@import "header.css";
-@import "footer.css";
-@import "highlight.css";
+@import 'fonts/typeface-roboto.css';
+@import 'fonts/typeface-roboto-mono.css';
+
+@import 'base/variables.css';
+@import 'base/base.css';
+
+@import 'modules/main.css';
+@import 'modules/navigation.css';
+@import 'modules/navigation-menu.css';
+@import 'modules/navigation-explore.css';
+@import 'modules/toolbar.css';
+@import 'modules/breadcrumbs.css';
+@import 'modules/page-versions.css';
+@import 'modules/doc.css';
+@import 'modules/header.css';
+@import 'modules/footer.css';
+
+@import 'plugins/highlight.css';
