@@ -1,24 +1,22 @@
-:root {
-  --toolbar-height: 2.5rem;
-}
+
 
 .toolbar {
   color: #5d5d5d;
-  align-items: center;
-  background-color: #fafafa;
-  box-shadow: 0 1px 0 #e1e1e1;
+  align-items: flex-end;
+  /* background-color: #fafafa; */
+  /* box-shadow: 0 1px 0 #e1e1e1; */
   display: flex;
   font-size: 0.75rem;
   height: var(--toolbar-height);
-  justify-content: flex-start;
+  justify-content: space-between;
   position: sticky;
-  top: var(--navbar-height);
   z-index: 1;
+  padding: 1rem 2rem .25rem;
 }
 
 .toolbar a,
 .toolbar a:visited {
-  color: inherit;
+  /* color: inherit; */
 }
 
 .navigation-toggle {
@@ -65,15 +63,15 @@
 
 .edit-this-page {
   display: none;
-  padding-right: 2.5rem;
+  /* padding-right: 2.5rem; */
 }
 
 @media screen and (min-width: 1024px) {
   .edit-this-page {
-    display: block;
+    display: flex;
   }
 }
 
-.toolbar .edit-this-page a {
-  color: #8e8e8e;
-}
+/* .toolbar .edit-this-page a {
+  color: $white;
+} */

@@ -1,5 +1,4 @@
 :root {
-  --color-text: #222;
   --color-navbar-bg: #0a0a0a;
   --color-navbar-bg-focus: #000;
   --color-navbar-text: #fff;
@@ -18,7 +17,7 @@ body {
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-main;
   font-size: 1.1em;
   text-size-adjust: 100%;
 }
@@ -30,23 +29,29 @@ html {
 }
 
 body {
-  color: var(--color-text);
+  color: $font-color;
   line-height: 1.6;
   margin: 0;
+  background-color: $main-bg;
 }
 
 a {
   text-decoration: none;
+  color: $link;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+}
+
 code,
 kbd,
 pre {
-  font-family: "Roboto Mono", monospace;
+  font-family: $font-mono;
 }
 
 b,

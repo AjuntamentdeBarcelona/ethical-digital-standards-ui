@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--color-navbar-bg);
+  background-color: $primary;
   color: var(--color-navbar-text);
   font-size: 0.83333rem;
   height: var(--navbar-height);
@@ -223,7 +223,7 @@ body {
   .navbar-link::after {
     border-width: 0 0 1px 1px;
     border-style: solid;
-    content: " ";
+    content: ' ';
     display: block;
     height: 0.5em;
     pointer-events: none;

@@ -1,0 +1,38 @@
+.sidebar {
+  display: none;
+  align-self: flex-start;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 0.95rem;
+  z-index: 1;
+  background-color: $light-bg;
+  padding-top: $sidebar-padding-top;
+  border-right: $border;
+
+  &.is-active {
+    display: block;
+  }
+  @media screen and (min-width: 769px) {
+    width: 16rem;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+}
+
+.brand {
+  padding: 0 $sidebar-padding-sides $sidebar-padding-top;
+  border-bottom: $separator;
+  img {
+    display: block;
+    max-width: 7rem;
+  }
+}
