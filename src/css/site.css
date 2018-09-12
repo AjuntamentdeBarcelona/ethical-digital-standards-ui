@@ -1,5 +1,5 @@
 /* @import 'fonts/typeface-roboto.css'; */
-@import "fonts/typeface-roboto-mono.css";
+@import "base/fonts.css";
 @import "base/variables.css";
 @import "base/base.css";
 @import "modules/main.css";
