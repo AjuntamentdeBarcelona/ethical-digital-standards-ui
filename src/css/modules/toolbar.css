@@ -7,11 +7,11 @@
   /* box-shadow: 0 1px 0 #e1e1e1; */
   display: flex;
   font-size: 0.75rem;
-  height: var(--toolbar-height);
+  height: var(--toolbar-height, 2rem);
   justify-content: space-between;
   position: sticky;
   z-index: 1;
-  padding: 1rem 2rem .25rem;
+  padding: 1rem 2rem 0.25rem;
 }
 
 .toolbar a,

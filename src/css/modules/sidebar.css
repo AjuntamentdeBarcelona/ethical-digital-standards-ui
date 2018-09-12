@@ -15,6 +15,7 @@
   &.is-active {
     display: block;
   }
+
   @media screen and (min-width: 769px) {
     width: 16rem;
     font-size: 0.9rem;
@@ -31,6 +32,7 @@
 .brand {
   padding: 0 $sidebar-padding-sides $sidebar-padding-top;
   border-bottom: $separator;
+
   img {
     display: block;
     max-width: 7rem;

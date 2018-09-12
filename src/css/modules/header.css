@@ -134,7 +134,7 @@ html.is-clipped--navbar {
 
 .navbar-item,
 .navbar-link {
-  color: var(--color-text);
+  color: var(--color-text, inherit);
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1rem;
@@ -203,7 +203,6 @@ html.is-clipped--navbar {
   .navbar,
   .navbar-menu,
   .navbar-end {
-    // align-items: stretch;
     display: flex;
   }
 

@@ -35,15 +35,15 @@ a + .crumbs {
   width: 1rem;
   height: 1rem;
   background: url(../img/chevron-right.svg) no-repeat center center;
-  background-size: .5rem;
-  vertical-align: -.075em;
+  background-size: 0.5rem;
+  vertical-align: -0.075em;
 }
 
 .crumbs li:last-of-type::after {
   content: none;
 }
 
-.crumbs a:hover{
+.crumbs a:hover {
   font-weight: bold;
   text-decoration: none;
 }

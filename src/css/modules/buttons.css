@@ -1,12 +1,12 @@
-.btn{
+.btn {
   background-color: $action;
   color: $white;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: $radius;
   text-align: center;
   line-height: 1;
 
-  &--icon{
+  &--icon {
     width: 1.5rem;
     height: 1.5rem;
     padding: 0;

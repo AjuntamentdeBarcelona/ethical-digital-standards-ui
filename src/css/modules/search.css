@@ -1,9 +1,10 @@
-.search{
+.search {
   position: relative;
   border-bottom: $border;
-  margin-bottom: .5rem;
-  padding-bottom: .2rem;
-  &__field{
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+
+  &__field {
     -webkit-appearance: none;
     border-radius: 0;
     border: 0;
@@ -12,17 +13,18 @@
     height: 1.2rem;
     display: block;
     padding-left: 1rem;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
-  &__button{
+
+  &__button {
     border: 0;
     background-color: transparent;
     position: absolute;
     left: 0;
-    top: .1rem;
+    top: 0.1rem;
     color: $font-color-light;
     padding: 0;
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: left;
   }
 }
