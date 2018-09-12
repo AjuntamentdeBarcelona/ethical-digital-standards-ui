@@ -15,7 +15,9 @@ site:
       latestVersion: *latest_version_abc
     - &component
       name: xyz
-      title: Project XYZ
+      title:
+        "Mesura de govern de gestió ètica i responsable de dades: Barcelona Data
+        Commons"
       url: /xyz/6.0/index.html
       versions:
         - &latest_version_xyz
