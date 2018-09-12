@@ -1,5 +1,3 @@
-
-
 .toolbar {
   color: #5d5d5d;
   align-items: flex-end;
@@ -14,10 +12,10 @@
   padding: 1rem 2rem 0.25rem;
 }
 
-.toolbar a,
+/* .toolbar a,
 .toolbar a:visited {
-  /* color: inherit; */
-}
+  color: inherit;
+} */
 
 .navigation-toggle {
   background: url(../img/menu.svg) no-repeat 50% 47.5%;
@@ -47,19 +45,15 @@
   background-size: 41.5%;
 }
 
-.home-link {
-  background: url(../img/home-o.svg) no-repeat 50% 45%;
-  background-size: 50%;
-  display: block;
-  height: 2.5rem;
-  padding: 0;
-  width: 2.5rem;
-}
+/* .home-link {
+  color: $font-color;
+  margin-right: 0.3rem;
+  font-size: 2rem;
 
-.home-link:hover,
-.home-link.is-current {
-  background-image: url(../img/home.svg);
-}
+  &:hover {
+    opacity: 0.5;
+  }
+} */
 
 .edit-this-page {
   display: none;
