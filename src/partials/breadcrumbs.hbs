@@ -1,7 +1,8 @@
 <nav class="crumbs" role="navigation" aria-label="breadcrumbs">
-  {{!-- {{#if page.breadcrumbs}}
+  {{#if page.breadcrumbs}}
   <ul>
-    {{#with page.componentVersion}} {{#if (and ./title (not (or ./root (eq @root.page.breadcrumbs.0.content ./title))))}}
+    {{#with page.componentVersion}} {{#if (and ./title (not (or ./root (eq @root.page.breadcrumbs.0.content
+    ./title))))}}
     <li class="crumb"><a href="{{{relativize @root.page.url ./url}}}">{{{./title}}}</a></li>
     {{/if}} {{/with}} {{#each page.breadcrumbs}}
     <li class="crumb">
@@ -11,9 +12,10 @@
     </li>
     {{/each}}
   </ul>
-  {{/if}} --}}
+  {{else}}
   <ul>
     <li class="crumb"><a href="#">Quickstart</a></li>
     <li class="crumb">Hardware and Software Requirements</li>
   </ul>
+  {{/if}}
 </nav>
