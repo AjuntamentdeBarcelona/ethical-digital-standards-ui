@@ -1,0 +1,22 @@
+<div class="sidebar navigation-container" {{#if page.component}} data-component="{{page.component.name}}" data-version="{{page.version}}"
+  {{/if}}>
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+      <div class="navigation__header">
+        {{!--
+        <h3 class="title"><a href="">{{site.title}}</a></h3> --}}
+        <h3 class="navigation__title">
+          <a href="">
+            {{page.component.title}}
+          </a>
+        </h3>
+        {{!-- <form class="search">
+          <input type="search" class="search__field" placeholder="Cercar..." />
+          <button type="submit" class="search__button"><i class="fa fa-search"></i></button>
+        </form> --}}
+      </div>
+      {{> navigation-menu}}
+      {{> navigation-explore}}
+    </div>
+  </aside>
+</div>

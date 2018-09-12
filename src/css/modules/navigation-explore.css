@@ -9,10 +9,9 @@
 
 .navigation-explore .context {
   flex-shrink: 0;
-  color: #5d5d5d;
-  background-color: #fafafa;
-  box-shadow: 0 -1px 0 #e1e1e1;
-  padding: 0 0.25rem 0 0.5rem;
+  color: $font-color-inverse;
+  background-color: $dark-bg;
+  padding: 0 $sidebar-padding-sides;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,19 +19,23 @@
   /* font-size: 0.75rem; */
   font-size: 0.8824em;
   line-height: 1;
-  height: var(--drawer-height);
+  height: 2.5rem;
 }
 
 .navigation-explore.is-active .context {
   box-shadow: 0 1px 0 #e1e1e1;
 }
 
+.navigation-explore .context .title {
+  padding: 0;
+}
+
 .navigation-explore .context .version {
   background-image: url(../img/chevron.svg);
   background-repeat: no-repeat;
-  background-position: right 0.5rem top 50%;
+  background-position: right 0 top 50%;
   background-size: auto 0.75em;
-  padding: 0 1.5rem 0 0;
+  padding: 0 0.75rem 0 0;
 }
 
 .navigation-explore .components {

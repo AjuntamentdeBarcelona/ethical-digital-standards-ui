@@ -6,20 +6,25 @@ html.is-clipped--navbar {
   overflow-y: hidden;
 }
 
-body {
-  padding-top: var(--navbar-height);
-}
-
 .navbar {
-  background-color: var(--color-navbar-bg);
-  color: var(--color-navbar-text);
-  font-size: 0.83333rem;
+  background-color: $dark-grey;
   height: var(--navbar-height);
-  position: fixed;
-  top: 0;
   width: 100%;
   word-wrap: break-word;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  padding-left: $sidebar-padding-sides;
+}
+
+.navbar__logo {
+  color: $white;
+  font-size: 1.5rem;
+  font-family: $font-alt;
+  font-weight: bold;
+  display: flex;
+  align-content: center;
+  line-height: 1;
 }
 
 .navbar a {
@@ -129,7 +134,7 @@ body {
 
 .navbar-item,
 .navbar-link {
-  color: var(--color-text);
+  color: var(--color-text, inherit);
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1rem;
@@ -198,7 +203,6 @@ body {
   .navbar,
   .navbar-menu,
   .navbar-end {
-    align-items: stretch;
     display: flex;
   }
 

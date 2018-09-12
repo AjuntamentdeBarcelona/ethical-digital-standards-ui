@@ -11,6 +11,7 @@
     "node": ">= 8.0.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "autoprefixer": "^7.1.6",
     "browserify": "^14.5.0",
     "chokidar": "^2.0.1",
@@ -49,5 +50,8 @@
     "typeface-roboto-mono": "^0.0.44",
     "vinyl-buffer": "^1.0.0",
     "vinyl-fs": "^2.4.4"
+  },
+  "dependencies": {
+    "postcss-comment": "^2.0.0"
   }
 }

@@ -1,11 +1,14 @@
 <div class="toolbar" role="navigation">
   <button class="navigation-toggle"></button>
   {{#if site.homeUrl}}
-  <a href="{{relativize page.url site.homeUrl}}" class="home-link{{#if page.home}} is-current{{/if}}"></a>
+  {{!-- <a href="{{relativize page.url site.homeUrl}}" aria-label="Home" class="home-link{{#if page.home}} is-current{{/if}}">
+    <i class="fas fa-home"></i>
+  </a> --}}
   {{/if}}
-{{> breadcrumbs}}
-{{> page-versions}}
+  {{> breadcrumbs}}
+  {{> page-versions}}
   {{#if page.editUrl}}
-  <div class="edit-this-page"><a href="{{page.editUrl}}">Edit this Page</a></div>
+  <a href="{{page.editUrl}}" class="edit-this-page" aria-label="Edit">
+    <i class="far fa-edit"></i></a>
   {{/if}}
 </div>

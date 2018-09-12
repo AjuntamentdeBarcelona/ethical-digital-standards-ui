@@ -9,3 +9,10 @@ module.exports = (files) =>
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError())
+    .pipe(
+      eslint({
+        rules: {
+          fix: true,
+        },
+      })
+    )

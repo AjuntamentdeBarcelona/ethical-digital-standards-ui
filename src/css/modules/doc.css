@@ -1,8 +1,11 @@
 .doc {
   margin: 0 auto;
   max-width: 40rem;
-  padding: 0 1rem 4rem;
+  padding: 0 1.5rem 4rem;
   color: #333;
+  background-color: $light-bg;
+  border: $border;
+  box-shadow: $shadow;
 }
 
 @media screen and (min-width: 1024px) {
@@ -22,6 +25,7 @@
   font-weight: normal;
   line-height: 1.3;
   margin: 1rem 0 0;
+  font-family: $font-alt;
 }
 
 .doc h3 {
@@ -50,7 +54,7 @@
 .doc h4 > a.anchor::before,
 .doc h5 > a.anchor::before,
 .doc h6 > a.anchor::before {
-  content: "\00a7";
+  content: '\00a7';
 }
 
 .doc h1:hover > a.anchor,
@@ -387,11 +391,11 @@
 }
 
 .doc ul.checklist i.fa-check-square-o::before {
-  content: "\2713";
+  content: '\2713';
 }
 
 .doc ul.checklist i.fa-square-o::before {
-  content: "\274f";
+  content: '\274f';
 }
 
 .doc .dlist .dlist,
@@ -514,7 +518,7 @@
   border: 1px solid #404040;
   border-radius: 100%;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-main;
   font-size: 0.75rem;
   font-style: normal;
   height: 1.25em;
@@ -547,12 +551,12 @@ b.button {
 }
 
 b.button::before {
-  content: "[";
+  content: '[';
   padding-right: 0.25em;
 }
 
 b.button::after {
-  content: "]";
+  content: ']';
   padding-left: 0.25em;
 }
 
@@ -574,7 +578,7 @@ kbd,
 }
 
 .keyseq {
-  font-family: "Roboto Mono", monospace;
+  font-family: $font-mono;
   font-size: 0.9em;
 }
 
@@ -591,7 +595,7 @@ kbd,
 }
 
 .menuseq i.caret::before {
-  content: ">";
+  content: '>';
   font-weight: 500;
 }
 

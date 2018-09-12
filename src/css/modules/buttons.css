@@ -1,0 +1,17 @@
+.btn {
+  background-color: $action;
+  color: $white;
+  padding: 0.5rem 2rem;
+  border-radius: $radius;
+  text-align: center;
+  line-height: 1;
+
+  &--icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

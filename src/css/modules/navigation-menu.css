@@ -7,17 +7,8 @@ html.is-clipped--nav {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-}
-
-/* help Chrome calculate the height correctly; must match .navigation value minus height of drawer */
-.navigation-menu {
-  height: calc(100vh - var(--navbar-height) - var(--toolbar-height) - var(--drawer-height));
-}
-
-@media screen and (min-width: 1024px) {
-  .navigation-menu {
-    height: calc(100vh - var(--navbar-height) - var(--drawer-height));
-  }
+  font-family: $font-main;
+  padding: 0 $sidebar-padding-sides;
 }
 
 .navigation-menu:not(.is-active) {
@@ -42,7 +33,7 @@ html.is-clipped--nav {
   /*
   padding: 0.25em 0.75em;
   */
-  padding: 0.125rem 0.5rem 0.25rem;
+  /* padding: 0.125rem 0.5rem 0.25rem; */
 }
 
 .nav-menu a,
@@ -53,18 +44,27 @@ html.is-clipped--nav {
 .nav-list {
   margin: 0;
   /* bottom padding allows scroll to extend slightly beyond end of list */
-  padding: 0 0 0.5em;
+  padding: 0;
   width: 100%;
+  font-weight: 600;
 }
 
 .nav-list .nav-list {
   margin-left: 1em;
   padding-bottom: 0;
+  font-weight: 400;
+}
+
+.nav-list .nav-list .nav-list {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  opacity: 0.7;
 }
 
 .nav-item {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   padding-top: 0.25em;
@@ -75,26 +75,27 @@ html.is-clipped--nav {
 }
 
 /* matches list without a title */
-.nav-item[data-depth="0"] > .nav-list:first-child {
+.nav-item[data-depth='0'] > .nav-list:first-child {
   display: block;
   margin-left: 0;
 }
 
-.nav-item[data-depth="0"] > .nav-list:first-child > .nav-item:first-child {
+.nav-item[data-depth='0'] > .nav-list:first-child > .nav-item:first-child {
   padding-top: 0;
 }
 
 .nav-toggle {
-  background: transparent url(../img/caret.svg) no-repeat left center;
-  background-size: 85%;
+  /* background: transparent url(../img/caret.svg) no-repeat left center;
+  background-size: 85%; */
   border: none;
   cursor: pointer;
   height: 1.85em;
   outline: none;
   padding: 0;
   /* nudge font size and width to fix calculation error in Chrome */
-  font-size: 0.95em;
+  font-size: 0.6rem;
   width: 1.0526em;
+  color: $font-color-light;
 }
 
 @media screen and (min-width: 769px) {
@@ -108,15 +109,15 @@ html.is-clipped--nav {
 }
 
 .nav-item.is-active > .nav-toggle {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .nav-link,
 .nav-text {
   display: inline-block;
   line-height: 1.85;
-  margin-left: 1em;
-  padding-left: 0.25em;
+  /* margin-left: 1em;
+  padding-left: 0.25em; */
 }
 
 @media screen and (min-width: 769px) {

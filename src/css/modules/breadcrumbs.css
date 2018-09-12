@@ -1,7 +1,7 @@
 .crumbs {
   display: none;
   flex: 1 1;
-  padding: 0 0.5rem 0 0.75rem;
+  /* padding: 0 0.5rem 0 0.75rem; */
   line-height: 1.35;
   hyphens: none;
 }
@@ -30,10 +30,20 @@ a + .crumbs {
 }
 
 .crumbs li::after {
-  content: "/";
+  content: "";
   padding: 0 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/chevron-right.svg) no-repeat center center;
+  background-size: 0.5rem;
+  vertical-align: -0.075em;
 }
 
 .crumbs li:last-of-type::after {
   content: none;
+}
+
+.crumbs a:hover {
+  font-weight: bold;
+  text-decoration: none;
 }
