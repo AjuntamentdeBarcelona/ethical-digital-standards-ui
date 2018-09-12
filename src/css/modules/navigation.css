@@ -41,22 +41,21 @@
     flex-direction: column;
   }
 
-  &__header{
+  &__header {
     padding: 0 $sidebar-padding-sides;
   }
 
-  &__title{
+  &__title {
     font-family: $font-alt;
     font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-    a{
+    margin-top: 0;
+    a {
       color: inherit;
     }
   }
 }
-
-
 
 .navigation .panels {
   display: flex;
