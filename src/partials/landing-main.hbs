@@ -1,0 +1,9 @@
+<div class="main-wrapper">
+  <main class="main" role="main">
+    {{#if page.navigation}}
+    <nav class="landing-menu">
+      {{> navigation-tree navigation=page.navigation}}
+    </nav>
+    {{/if}}
+  </main>
+</div>
