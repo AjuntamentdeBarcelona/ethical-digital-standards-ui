@@ -1,0 +1,26 @@
+.landing {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+
+    > * {
+      width: calc(33.33% - 2rem);
+    }
+  }
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.2);
+  color: $font-color;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+
+  > a {
+    color: inherit;
+  }
+}

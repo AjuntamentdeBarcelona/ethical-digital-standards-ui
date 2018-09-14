@@ -1,0 +1,7 @@
+{{#each navigation}}
+<li class="card">
+  <a class="nav-link" href="{{~#if (eq ./urlType 'internal')}}{{{relativize @root.page.url ./url}}}{{~else}}{{{./url}}}{{~/if}}">
+    {{{./content}}}
+  </a>
+</li>
+{{/each}}
