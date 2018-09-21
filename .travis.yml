@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "8"
+before_script:
+  - npm install -g gulp-cli
+script: gulp pack
+deploy:
+  provider: releases
+  api_key:
+    secure: EAyG1ChfiBVSH3cB4Gd0JgRU9/JavuPm5Aq0bvzJ7hYiYWLRhiFqx3J2ZKYGIn3LyZcnGwhwEbgBLlD4HpcozW8/T9pzLi9ofEJbstxPFEG1ds5/uyAegCBoy1rwHw+KHkXgu/w4OYyjlUJUjwGwkkIrfNvMqbOWTX78Z0u7zGShLGUJREWu2kfzm0eYGzRWIroXAldAILESZLMK8jxhdsDwJUjwfBVGgy+orhB6lgsCvBrx6tWQu/0WuLdYfeQaVsvEC4CNHHLbiQeUuuwl0HPXQ9amRU36oL33bJ1rVoOEsf33gN8ZMX81WjcHk5JqltLnUnd/g0IPnUTMjpbi8PMG5f9p/GZKl0dkGhb/yviS37tVYmyjxyUY6NJjKfb02qAOXgqzEokEd9BAXA+Zkg0nc+rDZu2iyXvVcnwquFRJEoLol2ruSzIrkc8P8lfuL/Mpt5SHeBMbY6CpxiMPoZcn+5JezDXQe4/VPLdHcvSSIjGDQCLi7SxoBI77sR1RoDh9U40m10qPgwQM4yguu9ueqlP6L+Nck7CLofiZ17DLxuO4aTcv7RrHblSS9Zd6e12Hf4wivPwnv7//40nv3CSQF1nZFnGA8jyHFnWFdPBwhSIsYGgrIlmI3FHyiSk0OwVmin0szxfTeP4vJXs0lFl4pmxjyTeZiouaHsKYeUk=
+  file:
+    - build/ui-bundle.zip
+  skip_cleanup: true
+  on:
+    repo: gmarpons/ethical-digital-standards-ui
+    tags: true
