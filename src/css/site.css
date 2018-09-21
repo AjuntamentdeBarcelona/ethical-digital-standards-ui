@@ -15,6 +15,7 @@
 @import "modules/breadcrumbs.css";
 @import "modules/page-versions.css";
 @import "modules/doc.css";
+@import "modules/landing.css";
 @import "plugins/highlight.css";
 /* .annotator-frame {
    display: none !important;
