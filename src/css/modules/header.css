@@ -7,21 +7,65 @@ html.is-clipped--navbar {
 }
 
 .navbar {
-  background-color: $dark-grey;
+  background-color: $primary;
+  color: $white;
   height: var(--navbar-height);
   width: 100%;
   word-wrap: break-word;
   z-index: 3;
   display: flex;
   align-items: center;
-  padding-left: $sidebar-padding-sides;
+  padding: 0 $sidebar-padding-sides;
+
+  a {
+    color: $white;
+  }
+
+  &__links {
+    list-style: none;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: 2.75rem;
+    font-size: 0.85rem;
+
+    li {
+      display: inline-block;
+      margin-left: 2.5rem;
+    }
+  }
+
+  &__lang {
+    font-size: 0.75rem;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 0.8em;
+        border-left: 0.15em solid;
+        opacity: 0.25;
+        margin-left: 0.15em;
+        margin-right: 0.15em;
+      }
+
+      &:first-child::before {
+        display: none;
+      }
+    }
+  }
 }
 
 .navbar__logo {
   color: $white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   font-family: $font-alt;
-  font-weight: bold;
+  text-transform: uppercase;
   display: flex;
   align-content: center;
   line-height: 1;

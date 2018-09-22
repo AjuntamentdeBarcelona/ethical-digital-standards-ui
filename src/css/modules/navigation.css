@@ -30,12 +30,7 @@
 }
  */
 .navigation {
-  @media screen and (min-width: 769px) {
-    box-shadow: 0.5px 0 3px #c1c1c1;
-  }
-
   @media screen and (min-width: 1024px) {
-    box-shadow: none;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -47,6 +42,7 @@
 
   &__title {
     font-family: $font-alt;
+    font-weight: 300;
     font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
