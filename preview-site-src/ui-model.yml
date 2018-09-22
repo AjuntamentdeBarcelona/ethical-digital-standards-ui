@@ -82,9 +82,6 @@ page:
             - content: Hardware and Software Requirements
               url: /xyz/5.2/index.html
               urlType: internal
-            - title: IDE Integration
-              url: "#"
-              urlType: fragment
         - content: Liber Recusabo
           url: "#liber-recusabo"
           urlType: fragment

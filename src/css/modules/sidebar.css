@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   min-height: 100vh;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   z-index: 1;
   background-color: $light-bg;
   padding-top: $sidebar-padding-top;
@@ -18,11 +18,13 @@
 
   @media screen and (min-width: 769px) {
     width: 16rem;
-    font-size: 0.9rem;
+    /*     font-size: 0.9rem;
+ */
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 0.85rem;
+    /*     font-size: 0.85rem;
+ */
     display: flex;
     flex-direction: column;
     top: 0;

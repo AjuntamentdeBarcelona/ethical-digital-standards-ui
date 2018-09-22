@@ -47,6 +47,7 @@ html.is-clipped--nav {
   padding: 0;
   width: 100%;
   font-weight: 600;
+  opacity: 0.8;
 }
 
 .nav-list .nav-list {
@@ -68,6 +69,15 @@ html.is-clipped--nav {
   flex-wrap: wrap;
   list-style: none;
   padding-top: 0.25em;
+  margin-bottom: 0.5rem;
+
+  &[data-depth="2"] {
+    margin-bottom: 0.25rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .nav-item:not(.is-active) > .nav-list {
@@ -75,12 +85,12 @@ html.is-clipped--nav {
 }
 
 /* matches list without a title */
-.nav-item[data-depth='0'] > .nav-list:first-child {
+.nav-item[data-depth="0"] > .nav-list:first-child {
   display: block;
   margin-left: 0;
 }
 
-.nav-item[data-depth='0'] > .nav-list:first-child > .nav-item:first-child {
+.nav-item[data-depth="0"] > .nav-list:first-child > .nav-item:first-child {
   padding-top: 0;
 }
 
@@ -115,7 +125,7 @@ html.is-clipped--nav {
 .nav-link,
 .nav-text {
   display: inline-block;
-  line-height: 1.85;
+  line-height: 1.2;
   /* margin-left: 1em;
   padding-left: 0.25em; */
 }
@@ -123,7 +133,7 @@ html.is-clipped--nav {
 @media screen and (min-width: 769px) {
   .nav-link,
   .nav-text {
-    line-height: 1.6;
+    line-height: 1.4;
   }
 }
 
