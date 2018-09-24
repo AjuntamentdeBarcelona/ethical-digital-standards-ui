@@ -54,7 +54,7 @@
 .doc h4 > a.anchor::before,
 .doc h5 > a.anchor::before,
 .doc h6 > a.anchor::before {
-  content: '\00a7';
+  content: "\00a7";
 }
 
 .doc h1:hover > a.anchor,
@@ -68,11 +68,11 @@
 
 .doc a,
 .doc a:visited {
-  color: #1565c0;
+  color: $link;
 }
 
 .doc a:hover {
-  color: #104d92;
+  color: $link-hover;
 }
 
 .doc i.fa {
@@ -391,11 +391,11 @@
 }
 
 .doc ul.checklist i.fa-check-square-o::before {
-  content: '\2713';
+  content: "\2713";
 }
 
 .doc ul.checklist i.fa-square-o::before {
-  content: '\274f';
+  content: "\274f";
 }
 
 .doc .dlist .dlist,
@@ -551,12 +551,12 @@ b.button {
 }
 
 b.button::before {
-  content: '[';
+  content: "[";
   padding-right: 0.25em;
 }
 
 b.button::after {
-  content: ']';
+  content: "]";
   padding-left: 0.25em;
 }
 
@@ -595,7 +595,7 @@ kbd,
 }
 
 .menuseq i.caret::before {
-  content: '>';
+  content: ">";
   font-weight: 500;
 }
 

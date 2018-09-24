@@ -2,6 +2,8 @@
 $primary: rgb(59, 49, 245);
 $primary-dark: rgb(51, 48, 97);
 $light-blue: #398df5;
+$lighter-blue: #74acf2;
+$secondary: rgb(232, 79, 82);
 $light-grey: #f4f8fb;
 $dark-grey: #343940;
 $white: white;
@@ -13,9 +15,11 @@ $light-bg: $white;
 $dark-bg: $dark-grey;
 
 $font-color: #292d30;
+$font-color-alt: #575f66;
 $font-color-inverse: #9fa5b3;
 $font-color-light: #c3c3ca;
 $link: $light-blue;
+$link-hover: $lighter-blue;
 
 /* Fonts */
 $font-main: "Open Sans", sans-serif;
@@ -28,12 +32,15 @@ $font-mono: "Roboto Mono", monospace;
 
 /* Spacing */
 $sidebar-padding-top: 1rem;
-$sidebar-padding-sides: 1rem;
+$sidebar-padding-sides: 0.75rem;
+$submenu-spacing: 0.75rem;
+$submenu-negative-spacing: -1.5rem;
 
 /* Borders */
 $border: 1px solid rgba(0, 0, 0, 0.1);
 $shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 $separator: 1px solid $light-grey;
+$sidebar-border: 4px solid $secondary;
 
 $radius: 3px;
 
