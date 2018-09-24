@@ -1,14 +1,21 @@
-footer.footer {
+.footer {
+  display: flex;
   font-size: 0.75rem;
   background-color: $primary-dark;
   color: $font-color-inverse;
   padding: 0.5rem 1rem;
-}
 
-.footer p {
-  margin: 0.5rem 0;
-}
+  &__cityhall {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: -1rem;
+  }
 
-.footer a {
-  color: #5d5d5d;
+  p {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    color: #5d5d5d;
+  }
 }

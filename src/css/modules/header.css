@@ -71,6 +71,17 @@ html.is-clipped--navbar {
   line-height: 1;
 }
 
+.navbar__cityhall {
+  margin-right: -$sidebar-padding-sides;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 5rem;
+  }
+}
+
 .navbar a {
   text-decoration: none;
 }
