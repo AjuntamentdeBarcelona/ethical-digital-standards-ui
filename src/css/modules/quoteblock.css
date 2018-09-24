@@ -1,0 +1,23 @@
+.quoteblock {
+  border-left: 10px solid $primary-lighter;
+  margin: 1.5rem 2rem;
+  padding-left: 1rem;
+
+  .title {
+    font-weight: 700;
+  }
+
+  blockquote {
+    margin: 0;
+
+    .paragraph:first-child {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .attribution {
+    margin-top: 1rem;
+    font-size: 90%;
+    font-style: italic;
+  }
+}
