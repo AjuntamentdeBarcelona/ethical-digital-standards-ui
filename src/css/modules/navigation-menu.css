@@ -130,12 +130,13 @@ html.is-clipped--nav {
 
   &::before {
     content: "";
-    width: 4px;
+    width: 0;
+    height: 0;
     position: absolute;
     left: -$sidebar-padding-sides;
-    top: 0.3em;
-    bottom: 0.3em;
-    background-color: $secondary;
+    top: calc(50% - 8px);
+    border: 8px solid transparent;
+    border-left-color: $secondary;
   }
 }
 
