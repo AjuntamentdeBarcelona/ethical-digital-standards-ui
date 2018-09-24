@@ -22,11 +22,18 @@ $font-color-light: #c3c3ca;
 $link: $light-blue;
 $link-hover: $lighter-blue;
 
+/* Alerts */
 $caution: $tertiary;
 $important: $secondary;
 $note: $primary;
 $tip: $primary;
 $warning: $tertiary;
+
+/* Tables */
+$th-bg: #d9d9d9;
+$th-border: 1px solid $th-bg;
+$td-bg: #f7f7f7;
+$td-border: 1px solid #e8e8e8;
 
 /* Fonts */
 $font-main: "Open Sans", sans-serif;
