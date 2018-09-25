@@ -63,6 +63,7 @@
 @media screen and (min-width: 1024px) {
   .edit-this-page {
     display: flex;
+    margin-bottom: 0.1rem;
   }
 }
 

@@ -66,10 +66,10 @@ If font-based icons are enabled (`icons=font`), the checkbox gets inserted as th
 <div class="ulist checklist">
 <ul class="checklist">
 <li>
-<p><i class="fa fa-square-o"> todo</p>
+<p><i class="far fa-square"> todo</p>
 </li>
 <li>
-<p><i class="fa fa-check-square-o"> done!</p>
+<p><i class="far fa-check-square"> done!</p>
 </li>
 </ul>
 </div>

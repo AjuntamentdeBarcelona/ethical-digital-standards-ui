@@ -44,6 +44,6 @@ a + .crumbs {
 }
 
 .crumbs a:hover {
-  font-weight: bold;
   text-decoration: none;
+  color: $link-hover;
 }

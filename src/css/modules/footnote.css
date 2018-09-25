@@ -1,0 +1,13 @@
+#footnotes {
+  margin-top: 2rem;
+
+  hr {
+    border: 0;
+    border-top: $border;
+  }
+}
+
+.footnote {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}

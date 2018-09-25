@@ -18,8 +18,6 @@ html.is-clipped--nav {
 .nav-menu {
   flex-grow: 1;
   min-height: 0;
-  /* QUESTION move padding to .navigation-menu? */
-  padding: 0.5rem 0.25rem;
 }
 
 .nav-menu h3.title {
@@ -38,27 +36,14 @@ html.is-clipped--nav {
 
 .nav-menu a,
 .nav-menu a:visited {
-  color: inherit;
+  color: $font-color-alt;
 }
 
 .nav-list {
   margin: 0;
-  /* bottom padding allows scroll to extend slightly beyond end of list */
   padding: 0;
   width: 100%;
   font-weight: 600;
-}
-
-.nav-list .nav-list {
-  margin-left: 1em;
-  padding-bottom: 0;
-  font-weight: 400;
-}
-
-.nav-list .nav-list .nav-list {
-  font-size: 0.7rem;
-  line-height: 1.2;
-  opacity: 0.7;
 }
 
 .nav-item {
@@ -68,6 +53,20 @@ html.is-clipped--nav {
   flex-wrap: wrap;
   list-style: none;
   padding-top: 0.25em;
+  margin-bottom: 0.5rem;
+
+  &[data-depth="2"] {
+    margin-left: $submenu-spacing;
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .nav-item:not(.is-active) > .nav-list {
@@ -75,12 +74,12 @@ html.is-clipped--nav {
 }
 
 /* matches list without a title */
-.nav-item[data-depth='0'] > .nav-list:first-child {
+.nav-item[data-depth="0"] > .nav-list:first-child {
   display: block;
   margin-left: 0;
 }
 
-.nav-item[data-depth='0'] > .nav-list:first-child > .nav-item:first-child {
+.nav-item[data-depth="0"] > .nav-list:first-child > .nav-item:first-child {
   padding-top: 0;
 }
 
@@ -115,21 +114,34 @@ html.is-clipped--nav {
 .nav-link,
 .nav-text {
   display: inline-block;
-  line-height: 1.85;
-  /* margin-left: 1em;
-  padding-left: 0.25em; */
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 769px) {
   .nav-link,
   .nav-text {
-    line-height: 1.6;
+    line-height: 1.4;
   }
 }
 
-.is-current-page > .nav-link,
-.is-current-page > .nav-text {
-  font-weight: 500;
+.is-current-page > .nav-link {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -$sidebar-padding-sides;
+    top: calc(50% - 8px);
+    border: 8px solid transparent;
+    border-left-color: $secondary;
+  }
+}
+
+.is-current-page[data-depth="2"] > .nav-link::before {
+  left: $submenu-negative-spacing;
 }
 
 .nav-toggle + .nav-link,

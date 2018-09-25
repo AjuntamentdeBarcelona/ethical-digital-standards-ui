@@ -14,12 +14,12 @@
   var navState = getNavState()
   var menuState = getMenuState(navState, navContainer.dataset.component, navContainer.dataset.version)
 
-  navContainer.querySelector('.context').addEventListener('click', function () {
-    var currentPanel = navContainer.querySelector('.is-active[data-panel]')
-    var activatePanel = currentPanel.dataset.panel === 'menu' ? 'explore' : 'menu'
-    currentPanel.classList.toggle('is-active')
-    navContainer.querySelector('[data-panel=' + activatePanel + ']').classList.toggle('is-active')
-  })
+  // navContainer.querySelector('.context').addEventListener('click', function () {
+  //   var currentPanel = navContainer.querySelector('.is-active[data-panel]')
+  //   var activatePanel = currentPanel.dataset.panel === 'menu' ? 'explore' : 'menu'
+  //   currentPanel.classList.toggle('is-active')
+  //   navContainer.querySelector('[data-panel=' + activatePanel + ']').classList.toggle('is-active')
+  // })
 
   find('.nav-toggle', menuPanel).forEach(function (btn) {
     var li = btn.parentElement

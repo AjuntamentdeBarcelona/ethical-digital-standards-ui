@@ -13,6 +13,8 @@
 @import "modules/search.css";
 @import "modules/toolbar.css";
 @import "modules/breadcrumbs.css";
+@import "modules/quoteblock.css";
+@import "modules/footnote.css";
 @import "modules/page-versions.css";
 @import "modules/doc.css";
 @import "modules/landing.css";
