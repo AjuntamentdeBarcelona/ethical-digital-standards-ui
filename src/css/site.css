@@ -17,6 +17,7 @@
 @import "modules/footnote.css";
 @import "modules/page-versions.css";
 @import "modules/doc.css";
+@import "modules/admonitionblock.css";
 @import "modules/landing.css";
 @import "plugins/highlight.css";
 /* .annotator-frame {
