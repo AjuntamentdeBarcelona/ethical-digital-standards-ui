@@ -27,6 +27,13 @@
       }
     }
   }
+
+  &__version {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: $font-color-inverse;
+  }
 }
 
 .navigation .panels {

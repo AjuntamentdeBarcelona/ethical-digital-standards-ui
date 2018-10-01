@@ -1,0 +1,62 @@
+.admonitionblock {
+  margin: 1.4rem 0 0;
+  border-left: 6px solid;
+
+  & td.content > :first-child {
+    margin: 0;
+  }
+
+  & pre {
+    font-size: 0.85rem;
+  }
+
+  & > table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    position: relative;
+    width: 100%;
+  }
+
+  & td.content {
+    padding: 0.75rem 1rem;
+    background-color: $lighter-grey;
+    width: 100%;
+  }
+
+  & .icon {
+    display: none; /* Removes default icons and classes from Antora */
+  }
+
+  &.caution {
+    border-color: $caution;
+  }
+
+  &.important {
+    border-color: $important;
+  }
+
+  &.note {
+    border-color: $note;
+  }
+
+  &.tip {
+    border-color: $tip;
+  }
+
+  &.warning {
+    border-color: $warning;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .paragraph {
+    margin-top: 0;
+  }
+
+  .paragraph + .paragraph {
+    margin-top: 0.5rem;
+  }
+}
