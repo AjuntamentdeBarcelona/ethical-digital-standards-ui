@@ -2,7 +2,9 @@
   'use strict'
 
   var navContainer = document.querySelector('.navigation-container')
+  if ( !navContainer ) return
   var navToggle = document.querySelector('.navigation-toggle')
+  if ( !navToggle ) return
 
   navToggle.addEventListener('click', toggleNavigation)
   // don't let click events propagate outside of navigation container
