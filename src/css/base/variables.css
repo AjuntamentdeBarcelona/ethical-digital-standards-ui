@@ -45,6 +45,18 @@ $font-mono: "Roboto Mono", monospace;
 /* Font sizes */
 
 /* Screen sizes */
+$screen-xs: 18.75rem; /* 300 */
+$screen-s-max: 28.0625rem; /* 449 */
+$screen-s: 28.125rem; /* 450 */
+$screen-m-max: 37.4375rem; /* 599 */
+$screen-m: 37.5rem; /* 600 */
+$screen-l-max: 49.9375rem; /* 799 */
+$screen-l: 50rem; /* 800 */
+$screen-xl-max: 62.4375rem; /* 999 */
+$screen-xl: 62.5rem; /* 1000 */
+$screen-xxl-max: 74.9375rem; /* 1199 */
+$screen-xxl: 75rem; /* 1200 */
+$screen-max: 87.5rem; /* 1400 */
 
 /* Spacing */
 $sidebar-padding-top: 1rem;
