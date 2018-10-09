@@ -18,12 +18,10 @@ body {
 html {
   box-sizing: border-box;
   font-family: $font-main;
-  font-size: 1.1em;
   text-size-adjust: 100%;
-}
+  font-size: 1.1em;
 
-@media screen and (min-width: 1024px) {
-  html {
+  @media screen and (min-width: $screen-xl) {
     font-size: 1.2em;
   }
 }
