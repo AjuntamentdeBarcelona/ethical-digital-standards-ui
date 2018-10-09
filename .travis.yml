@@ -12,6 +12,6 @@ deploy:
     - build/ui-bundle.zip
   skip_cleanup: true
   on:
-    repo: ajuntamentdebarcelona/ethical-digital-standards-ui
+    repo: AjuntamentdeBarcelona/ethical-digital-standards-ui
     tags: true
   overwrite: true
