@@ -4,7 +4,7 @@ html.is-clipped--nav {
 
 .navigation-menu {
   flex-grow: 1;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   display: flex;
   flex-direction: column;
   font-family: $font-main;
@@ -84,8 +84,7 @@ html.is-clipped--nav {
 }
 
 .nav-toggle {
-  /* background: transparent url(../img/caret.svg) no-repeat left center;
-  background-size: 85%; */
+  background-color: transparent;
   border: none;
   cursor: pointer;
   height: 1.85em;

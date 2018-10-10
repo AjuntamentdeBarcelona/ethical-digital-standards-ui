@@ -45,6 +45,22 @@ $font-mono: "Roboto Mono", monospace;
 /* Font sizes */
 
 /* Screen sizes */
+$screen-xs: 300px; /* 18.75rem */
+$screen-s-max: 449px; /* 28.0625rem */
+$screen-s: 450px; /* 28.125rem */
+$screen-m-max: 599px; /* 37.4375rem */
+$screen-m: 600px; /* 37.5rem */
+$screen-l-max: 799px; /* 49.9375rem */
+$screen-l: 800px; /* 50rem */
+$screen-xl-max: 999px; /* 62.4375rem */
+$screen-xl: 1000px; /* 62.5rem */
+$screen-xxl-max: 1199px; /* 74.9375rem */
+$screen-xxl: 1200px; /* 75rem */
+$screen-max: 1400px; /* 87.5rem */
+
+/* Widths */
+$doc-max-width: 54rem;
+$toolbar-max-width: 58rem;
 
 /* Spacing */
 $sidebar-padding-top: 1rem;
@@ -61,3 +77,5 @@ $sidebar-border: 4px solid $secondary;
 $radius: 3px;
 
 /* z-index */
+$z-sidebar-mobile: 1;
+$z-navigation-toggle: 2;

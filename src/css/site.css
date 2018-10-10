@@ -10,6 +10,7 @@
 @import "modules/navigation.css";
 @import "modules/navigation-menu.css";
 @import "modules/navigation-explore.css";
+@import "modules/navigation-toggle.css";
 @import "modules/search.css";
 @import "modules/toolbar.css";
 @import "modules/breadcrumbs.css";

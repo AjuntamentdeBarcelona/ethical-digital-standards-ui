@@ -1,17 +1,24 @@
 .doc {
-  margin: 0 auto;
-  max-width: 40rem;
-  padding: 0 2.5rem 3rem;
+  margin: 0 0.25rem;
+  max-width: 33rem;
+  padding: 0 0.75rem 3rem;
   background-color: $light-bg;
   border: $border;
   box-shadow: $shadow;
   font-size: 0.85rem;
-}
 
-@media screen and (min-width: 1024px) {
-  .doc {
+  @media (min-width: $screen-m) {
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-l) {
+    max-width: 37rem;
+  }
+
+  @media screen and (min-width: $screen-xl) {
     margin: 0 2rem 2rem;
-    max-width: 54rem;
+    max-width: $doc-max-width;
   }
 }
 
@@ -173,9 +180,14 @@
 }
 
 .doc h1 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.1;
-  margin: 2rem 0 1.5rem;
+  margin: 1rem 0;
+
+  @media (min-width: $screen-l) {
+    font-size: 2.4rem;
+    margin: 2rem 0 1.5rem;
+  }
 }
 
 .doc h2 {
