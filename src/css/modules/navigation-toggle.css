@@ -1,0 +1,49 @@
+.navigation-toggle {
+  position: fixed;
+  z-index: $z-navigation-toggle;
+  top: calc(var(--navbar-height) + 0.5rem);
+  left: 0.5rem;
+  color: $white;
+  background-color: $secondary;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  outline: none;
+  cursor: pointer;
+  display: block;
+  font-size: 1.25rem;
+  height: 2.5rem;
+  padding: 0;
+  width: 2.5rem;
+  margin-right: -0.25rem;
+}
+
+.navigation-toggle::-moz-focus-inner {
+  border: none;
+}
+
+.navigation-toggle__close {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation-toggle {
+    display: none;
+  }
+}
+
+.navigation-toggle.is-active {
+  left: 15.25rem;
+
+  @media screen and (min-width: 769px) {
+    left: 20.25rem;
+  }
+
+  .navigation-toggle__open {
+    display: none;
+  }
+
+  .navigation-toggle__close {
+    display: inline-block;
+  }
+}

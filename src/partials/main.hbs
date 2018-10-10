@@ -1,5 +1,11 @@
 <div class="main-wrapper">
+  <button class="navigation-toggle">
+    <i class="fas fa-bars navigation-toggle__open"></i>
+    <i class="fas fa-arrow-left navigation-toggle__close"></i>
+  </button>
+
   {{> sidebar}} {{!-- {{> navigation}} --}}
+
   <main class="main" role="main">
     {{> toolbar}} {{> article}}
   </main>

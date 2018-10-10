@@ -77,3 +77,5 @@ $sidebar-border: 4px solid $secondary;
 $radius: 3px;
 
 /* z-index */
+$z-sidebar-mobile: 1;
+$z-navigation-toggle: 2;

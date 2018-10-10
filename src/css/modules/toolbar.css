@@ -18,34 +18,6 @@
   color: inherit;
 } */
 
-.navigation-toggle {
-  background: url(../img/menu.svg) no-repeat 50% 47.5%;
-  background-size: 49%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: block;
-  height: 2.5rem;
-  padding: 0;
-  width: 2.5rem;
-  margin-right: -0.25rem;
-}
-
-.navigation-toggle::-moz-focus-inner {
-  border: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .navigation-toggle {
-    display: none;
-  }
-}
-
-.navigation-toggle.is-active {
-  background-image: url(../img/back.svg);
-  background-size: 41.5%;
-}
-
 /* .home-link {
   color: $font-color;
   margin-right: 0.3rem;
