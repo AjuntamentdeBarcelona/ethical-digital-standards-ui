@@ -1,0 +1,13 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  width="30"
+  height="30"
+  viewBox="0 0 30 30"
+>
+  <g>
+    <path
+       style="opacity:1;fill:#FFF;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;transform:rotate(-90deg);transform-origin:center center;"
+       d="M 3.6699219,6.5898438 1.4550781,8.6152344 15,23.374272 28.544922,8.6152344 26.330078,6.5898438 15,18.759498 Z"
+       />
+  </g>
+</svg>

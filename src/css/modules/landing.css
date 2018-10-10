@@ -1,26 +1,132 @@
 .landing {
+  &-hero {
+    background: #d8d8f5;
+    overflow: hidden;
+  }
+
+  &-hero__container {
+    max-width: 75rem;
+    margin: 0 auto;
+
+    img {
+      margin-top: -10%;
+      display: block;
+    }
+  }
+
+  &-hero__title {
+    margin: 0 1.8rem;
+    padding: 1rem 0.5rem;
+    font-size: 4rem;
+    line-height: 1.1;
+    background: $tertiary;
+    color: $white;
+  }
+
   &__cards {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    max-width: 64.5rem;
+    margin: 3rem auto;
 
     > * {
       width: calc(33.33% - 2rem);
     }
   }
+
+  &-intro {
+    background: #d8d8f5;
+    padding: 4rem 0;
+  }
+
+  &-intro__container {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-intro__title {
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 3rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 1.5rem);
+      width: 3rem;
+      height: 2px;
+      background: $secondary;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.2);
-  color: $font-color;
-  padding: 1rem;
+  background: $primary;
+  color: $white;
+  padding: 1.5rem;
   margin: 1rem;
-  min-height: 8rem;
+  min-height: 12rem;
   display: flex;
-  align-items: center;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/chevron-right-white.svg) no-repeat center center;
+    background-size: contain;
+    transition: transform 0.5s;
+  }
+
+  &:hover::after {
+    transform: translateX(0.5rem);
+  }
+
+  &:hover {
+    background: $secondary;
+
+    a::before {
+      height: 1px;
+    }
+  }
 
   > a {
     color: inherit;
+    position: relative;
+    padding-top: 0.5rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 2rem;
+      height: 5px;
+      background: $tertiary;
+      transition: all 0.3s;
+    }
   }
 }
