@@ -5,7 +5,7 @@
   /* box-shadow: 0 1px 0 #e1e1e1; */
   display: flex;
   font-size: 0.75rem;
-  height: var(--toolbar-height, 2rem);
+  /* height: var(--toolbar-height, 2rem); */
   justify-content: space-between;
   position: sticky;
   z-index: 1;
@@ -62,8 +62,7 @@
 
 @media screen and (min-width: 1024px) {
   .edit-this-page {
-    display: flex;
-    margin-bottom: 0.1rem;
+    display: block;
   }
 }
 

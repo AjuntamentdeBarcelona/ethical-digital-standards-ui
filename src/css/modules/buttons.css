@@ -14,4 +14,22 @@
     align-items: center;
     justify-content: center;
   }
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.btn--secondary {
+  background-color: $secondary;
+}
+
+.btn--mini {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
