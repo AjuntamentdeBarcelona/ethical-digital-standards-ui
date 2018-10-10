@@ -182,7 +182,7 @@
 .doc h1 {
   font-size: 1.8rem;
   line-height: 1.1;
-  margin: 1rem 0 1rem;
+  margin: 1rem 0;
 
   @media (min-width: $screen-l) {
     font-size: 2.4rem;
