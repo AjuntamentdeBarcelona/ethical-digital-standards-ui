@@ -6,13 +6,11 @@ before_script:
 script: gulp pack
 deploy:
   provider: releases
-  github-token: $GITHUB_TOKEN
-#  api_key:
-#    secure: RJ7Ej+OjTvJmiMU42M1hSbJqeHmCCxFLLxVOMEvTbybfKdefV9o/e7fe719l0GQr4UW91fKOI5I5nAZrQeEnGGHaxA1IzTmpJPQfo55V/rG1N9srfdQMu5u/YkWGc2L9qUACE1AVtP51E6OZi6BdU9xOnDY6dUpfi/FKavD39sxERrOb8QbNRQBmDvdPpfH8Piz13I4Mgtbn1wXM9nS+cCAP5vqR2eA5wq97m4dYe7HsV7DhV1fR30N/zp8tzU85rmLOULiNIbouwD08T15/WbC/zvag0mEXsS6l7mfeis4PvBprs6o8ujHHx3fnf9wmQ0w7YkddHUBrigzjdBX+vmmupqq37BiqRQEdp984eiz+GbCEvdvgV5pZT7Du9ctatt7ol0ouzXbHRdtTv59bPxunHPbUNGKKIvPxxUlSwAArJY5KNOwU2/d7umunxOTJm1HIectTtfMvWFTAZRWJpkhjLCjNMEUA/bdViagnU5lxFRxzNiLfhp4pEsjpWiksSgqwlimvEbkNf6SbXLDmNlYc4qwgPBk42VE16KgMHEt2brrxO/394OZxFitwJDUSFZBjU7OpeXA9GajLhmzID2N3hPxJtPZ/Qlkyltpu3VoSog44NDNUYpq51wiAqzQfDWEOGjzURzgwftnT75ohy9ypNQnwkD+117RWSl1C8fA=
+  api_key: $GITHUB_API_KEY
   file:
     - build/ui-bundle.zip
   skip_cleanup: true
   on:
-    repo: AjuntamentdeBarcelona/ethical-digital-standards-ui
+    repo: $TRAVIS_REPO_SLUG
     tags: true
   overwrite: true
