@@ -9,36 +9,49 @@
     margin: 0 auto;
 
     img {
-      margin-top: -10%;
+      margin-top: 10%;
       display: block;
+
+      @media screen and (min-width: 769px) {
+        margin-top: -10%;
+      }
     }
   }
 
   &-hero__title {
-    margin: 0 1.8rem;
+    margin: 0;
     padding: 1rem 0.5rem;
-    font-size: 4rem;
+    font-size: 2.25rem;
     line-height: 1.1;
     background: $tertiary;
     color: $white;
+
+    @media screen and (min-width: 769px) {
+      margin: 0 1.8rem;
+      font-size: 4rem;
+    }
   }
 
   &__cards {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     max-width: 64.5rem;
-    margin: 3rem auto;
+    margin: 0 auto;
 
-    > * {
-      width: calc(33.33% - 2rem);
+    @media screen and (min-width: 769px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 3rem auto;
+
+      > * {
+        width: calc(33.33% - 2rem);
+      }
     }
   }
 
   &-intro {
     background: #d8d8f5;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
   }
 
   &-intro__container {
