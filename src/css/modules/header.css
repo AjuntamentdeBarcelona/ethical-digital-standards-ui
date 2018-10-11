@@ -28,7 +28,7 @@ html.is-clipped--navbar {
     margin-left: auto;
     font-size: 0.85rem;
 
-    @media (min-width: $screen-l){
+    @media (min-width: $screen-l) {
       margin-right: 2.75rem;
     }
 
