@@ -2,6 +2,7 @@
   &-hero {
     background: #d8d8f5;
     overflow: hidden;
+    padding-top: var(--navbar-height);
   }
 
   &-hero__container {
@@ -9,36 +10,67 @@
     margin: 0 auto;
 
     img {
-      margin-top: -10%;
+      margin-top: 10%;
       display: block;
+
+      @media screen and (min-width: 769px) {
+        margin-top: -10%;
+      }
     }
   }
 
   &-hero__title {
-    margin: 0 1.8rem;
+    margin: 0;
     padding: 1rem 0.5rem;
-    font-size: 4rem;
-    line-height: 1.1;
     background: $tertiary;
     color: $white;
+
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    @media screen and (min-width: 769px) {
+      margin: 0 1.8rem;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 0.9;
+      }
+
+      h2 {
+        font-size: 2.25rem;
+      }
+    }
   }
 
   &__cards {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     max-width: 64.5rem;
-    margin: 3rem auto;
+    margin: 0 auto;
 
-    > * {
-      width: calc(33.33% - 2rem);
+    @media screen and (min-width: 769px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+
+      > * {
+        width: calc(33.33% - 2rem);
+      }
     }
   }
 
   &-intro {
     background: #d8d8f5;
-    padding: 4rem 0;
+    padding: 4rem 1rem 5rem;
   }
 
   &-intro__container {
@@ -71,6 +103,17 @@
 
     &::after {
       bottom: 0;
+    }
+  }
+
+  &-intro__cta {
+    text-align: center;
+    margin-top: 3rem;
+
+    .btn {
+      font-size: 0.9rem;
+      display: inline-block;
+      padding: 1rem 1.5rem;
     }
   }
 }
