@@ -26,8 +26,11 @@ html.is-clipped--navbar {
     list-style: none;
     padding-left: 0;
     margin-left: auto;
-    margin-right: 2.75rem;
     font-size: 0.85rem;
+
+    @media (min-width: $screen-l){
+      margin-right: 2.75rem;
+    }
 
     li {
       display: inline-block;
