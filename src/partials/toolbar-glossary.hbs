@@ -1,0 +1,12 @@
+<div class="toolbar" role="navigation">
+  <nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+    <ul>
+      <li class="crumb"><a href="/">Back</a>
+      </li>
+    </ul>
+  </nav>
+  {{#if page.editUrl}}
+  <a href="{{page.editUrl}}" class="edit-this-page btn btn--secondary btn--mini" title="Edit page on Github" aria-label="Edit">
+    <i class="far fa-edit"></i>Edit on GitHub</a>
+  {{/if}}
+</div>
