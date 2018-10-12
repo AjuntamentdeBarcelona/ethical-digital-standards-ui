@@ -3,6 +3,10 @@
   margin: 1.5rem 2rem;
   padding-left: 1rem;
 
+  .sidebarblock & {
+    border-color: $white;
+  }
+
   .title {
     font-weight: 700;
   }
