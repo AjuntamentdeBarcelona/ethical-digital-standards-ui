@@ -55,7 +55,7 @@
 .doc h4 > a.anchor::before,
 .doc h5 > a.anchor::before,
 .doc h6 > a.anchor::before {
-  content: "\00a7";
+  content: '\00a7';
 }
 
 .doc h1:hover > a.anchor,
@@ -279,7 +279,7 @@
 }
 
 .doc ul > li::before {
-  content: "";
+  content: '';
   display: block;
   width: 0.25em;
   height: 0.25em;
@@ -388,11 +388,11 @@
 }
 
 .doc ul.checklist i.fa-check-square-o::before {
-  content: "\2713";
+  content: '\2713';
 }
 
 .doc ul.checklist i.fa-square-o::before {
-  content: "\274f";
+  content: '\274f';
 }
 
 .doc .dlist .dlist,
@@ -449,6 +449,11 @@
 .doc .sidebarblock {
   background-color: $primary-lighter;
   padding: 0.75rem;
+
+  .policy-summary {
+    background-color: $white;
+    font-size: 90%;
+  }
 
   .paragraph {
     margin-top: 0.5rem;
@@ -552,12 +557,12 @@ b.button {
 }
 
 b.button::before {
-  content: "[";
+  content: '[';
   padding-right: 0.25em;
 }
 
 b.button::after {
-  content: "]";
+  content: ']';
   padding-left: 0.25em;
 }
 
@@ -596,7 +601,7 @@ kbd,
 }
 
 .menuseq i.caret::before {
-  content: ">";
+  content: '>';
   font-weight: 500;
 }
 
