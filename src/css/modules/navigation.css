@@ -37,18 +37,24 @@
 
   &__bottom {
     margin-top: $sidebar-padding-top;
-    border-top: $border;
     padding: $sidebar-padding-sides;
     font-size: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.05);
 
     a {
       color: inherit;
     }
 
-    .glossary-link:hover {
+    .pdf-link {
+      margin-bottom: 0.3rem;
+    }
+
+    .glossary-link a:hover,
+    .pdf-link a:hover {
       text-decoration: none;
 
-      .glossary-link__text {
+      .glossary-link__text,
+      .pdf-link__text {
         text-decoration: underline;
       }
     }
