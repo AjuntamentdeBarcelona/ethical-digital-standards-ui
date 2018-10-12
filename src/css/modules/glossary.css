@@ -1,0 +1,17 @@
+.glossary {
+  &__main {
+    .doc {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__toolbar {
+    margin-left: auto;
+    margin-right: auto;
+
+    .crumb svg {
+      margin-right: 0.2rem;
+    }
+  }
+}

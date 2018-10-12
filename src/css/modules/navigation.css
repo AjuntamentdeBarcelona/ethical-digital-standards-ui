@@ -34,6 +34,25 @@
     font-weight: bold;
     color: $font-color-inverse;
   }
+
+  &__bottom {
+    margin-top: $sidebar-padding-top;
+    border-top: $border;
+    padding: $sidebar-padding-sides;
+    font-size: 0.6rem;
+
+    a {
+      color: inherit;
+    }
+
+    .glossary-link:hover {
+      text-decoration: none;
+
+      .glossary-link__text {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .navigation .panels {
