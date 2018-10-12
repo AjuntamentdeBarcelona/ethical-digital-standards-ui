@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 15rem;
-  min-height: 100vh;
+  min-height: calc(100vh - var(--navbar-height));
   font-size: 0.75rem;
   z-index: 1;
   background-color: $light-bg;
