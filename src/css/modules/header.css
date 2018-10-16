@@ -48,7 +48,7 @@ html.is-clipped--navbar {
       display: inline-block;
 
       &::before {
-        content: "";
+        content: '';
         display: inline-block;
         height: 0.8em;
         border-left: 0.15em solid;
@@ -71,12 +71,25 @@ html.is-clipped--navbar {
   letter-spacing: 0.05em;
   font-family: $font-alt;
   text-transform: uppercase;
-  display: flex;
-  align-content: center;
   line-height: 1;
 
   @media (min-width: $screen-m) {
     font-size: 1.25rem;
+  }
+}
+
+.navbar__beta {
+  font-size: 0.7em;
+  vertical-align: 0.1em;
+  background-color: $secondary;
+  line-height: 1;
+  padding: 0 0.3em;
+  border-radius: 0.3em;
+
+  @media (min-width: $screen-m) {
+    font-size: 0.45em;
+    margin-left: -0.4em;
+    vertical-align: 0.7em;
   }
 }
 
@@ -291,7 +304,7 @@ html.is-clipped--navbar {
   .navbar-link::after {
     border-width: 0 0 1px 1px;
     border-style: solid;
-    content: " ";
+    content: ' ';
     display: block;
     height: 0.5em;
     pointer-events: none;
