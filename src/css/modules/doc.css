@@ -6,6 +6,7 @@
   border: $border;
   box-shadow: $shadow;
   font-size: 0.85rem;
+  word-break: break-word; /* Prevents long words or links from breaking the layout */
 
   @media (min-width: $screen-m) {
     max-width: 34rem;
