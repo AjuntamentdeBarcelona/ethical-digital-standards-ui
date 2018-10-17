@@ -11,8 +11,10 @@ const { posix: path } = require('path')
 const fs = require('fs')
 
 module.exports = (page) => {
-  if (!page || !page.component || !page.componentVersion) return ""
-  if (page.component.name === 'free-soft') return "" // TODO: get this info from catalog or FS
+  if (!page || !page.component || !page.componentVersion)
+    return ""
+  if (page.component.name === 'free-soft')
+    return ""                   // TODO: get this info from catalog or FS
   let pdfbase = [
     [
       'barcelona',
@@ -23,6 +25,9 @@ module.exports = (page) => {
     'pdf'
   ].join('.')
   let pdfpath = path.join(
+    // '/',
+    // page.component.name,
+    // page.componentVersion.version,
     '_attachments',
     pdfbase
   )
