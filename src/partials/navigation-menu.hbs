@@ -2,22 +2,24 @@
 <div class="navigation-menu is-active" data-panel="menu">
   <nav class="nav-menu">
     {{#with page.componentVersion}}
-    <!-- <h3 class="title"><a href="{{relativize page.url page.componentVersion.url}}">{{page.component.title}}</a></h3> -->
-    {{!-- <h3 class="title"><a href="{{{relativize @root.page.url ./url}}}">{{{./title}}}</a></h3> --}}
+      <!-- <h3 class="title"><a href="{{relativize page.url page.componentVersion.url}}">{{page.component.title}}</a></h3> -->
+      {{!-- <h3 class="title"><a href="{{{relativize @root.page.url ./url}}}">{{{./title}}}</a></h3> --}}
     {{/with}}
     {{> navigation-tree navigation=page.navigation}}
   </nav>
 </div>
 {{/if}}
 <div class="navigation__bottom">
-  <div class="pdf-link">
-    <a href="#">
-      <i class="fas fa-file-pdf"></i>
-      <span class="pdf-link__text">Download PDF</span>
-    </a>
-  </div>
+  {{#with (pdfpath page) as |path|}}
+    <div class="pdf-link">
+      <a href="{{relativize page.url path}}">
+        <i class="fas fa-file-pdf"></i>
+        <span class="pdf-link__text">Download PDF</span>
+      </a>
+    </div>
+  {{/with}}
   <div class="glossary-link">
-    <a href="{{siteRootPath}}/glossary/">
+    <a href="{{relativize page.url site.components.glossary.latest.url}}">
       <i class="fas fa-book"></i>
       <span class="glossary-link__text">Guides glossary</span>
     </a>
