@@ -12,14 +12,14 @@
 <div class="navigation__bottom">
   {{#with (pdfpath page) as |path|}}
     <div class="pdf-link">
-      <a href="{{relativize page.url path}}">
+      <a href="{{page.component.url}}{{path}}">
         <i class="fas fa-file-pdf"></i>
         <span class="pdf-link__text">Download PDF</span>
       </a>
     </div>
   {{/with}}
   <div class="glossary-link">
-    <a href="{{relativize page.url site.components.glossary.latest.url}}">
+    <a href="{{{relativize page.url site.components.glossary.latest.url}}}">
       <i class="fas fa-book"></i>
       <span class="glossary-link__text">Guides glossary</span>
     </a>
