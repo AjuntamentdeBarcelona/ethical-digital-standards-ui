@@ -89,7 +89,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: calc(50% - 1.5rem);
       width: 3rem;
@@ -111,9 +111,17 @@
     margin-top: 3rem;
 
     .btn {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       display: inline-block;
       padding: 1rem 1.5rem;
+    }
+
+    &-action {
+      text-transform: uppercase;
+      font-weight: bold;
+      display: block;
+      font-size: 1.3rem;
+      margin-top: 0.3rem;
     }
   }
 }
@@ -133,7 +141,7 @@
     position: absolute;
     bottom: 1.5rem;
     right: 1rem;
-    content: "";
+    content: '';
     width: 2rem;
     height: 2rem;
     background: url(../img/chevron-right-white.svg) no-repeat center center;
@@ -163,7 +171,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       width: 2rem;
