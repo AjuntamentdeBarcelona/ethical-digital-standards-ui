@@ -76,7 +76,7 @@ function registerHelpers (src) {
       .on('end', resolve)
 
     handlebars.registerHelper('i18n', function (str) {
-      return i18n != undefined ? i18n.t(str) : str
+      return i18n !== undefined ? i18n.t(str) : str
     })
   })
 }
