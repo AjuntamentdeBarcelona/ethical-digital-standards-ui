@@ -11,6 +11,8 @@ const uiLocales = {
     landingSubtitle:
       'The Ethical Digital Standards of Barcelona City Council presented in an open and collaborative way.',
     landingIntroTitle: 'What is Ethical Digital Standards?',
+    landingManifestoText: 'A manifesto for Open and Ethical Digital Standards',
+    landingManifestoCta: 'View manifesto',
     landingIntroP1:
       'Open-digitalisation programme: free software and agile implementation of Barcelona City Council services that defines the process of profound, progressive change in the way the city will offer its services to the general public in coming years.',
     landingIntroP2:
@@ -34,6 +36,8 @@ const uiLocales = {
     landingTitle: 'Barcelona Ethical Digital Standards',
     landingSubtitle:
       'Los Ethical Digital Standards del Ayuntamiento de Barcelona presentados de forma abierta y colaborativa.',
+    landingManifestoText: 'Manifesto por unos Estándares Digitales Abiertos y Éticos',
+    landingManifestoCta: 'Ver manifesto',
     landingIntroTitle: '¿Qué es Ethical Digital Standards?',
     landingIntroP1:
       'Programa para la digitalización abierta: software libre y desarrollo ágil de servicios del Ayuntamiento de Barcelona que define el proceso de cambio profundo y progresivo de la manera en que la ciudad ofrecerá sus servicios a la ciudadanía en los próximos años.',
@@ -58,6 +62,8 @@ const uiLocales = {
     landingTitle: 'Barcelona Ethical Digital Standards',
     landingSubtitle:
       "Els Ethical Digital Standards de l'Ajuntament de Barcelona es presenten de forma oberta i col·laborativa.",
+    landingManifestoText: 'Manifest por uns Estàndards Digitals Oberts i Ètics',
+    landingManifestoCta: 'Veure manifest',
     landingIntroTitle: 'Què és Ethical Digital Standards?',
     landingIntroP1:
       'El programa per a la Digitalització Oberta: Programari Lliure i Desenvolupament Àgil de Serveis de l’Ajuntament de Barcelona defineix el procés de canvi profund i progressiu de la manera en que la ciutat oferirà els seus serveis a la ciutadania en els propers anys.',
