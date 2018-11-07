@@ -14,12 +14,18 @@ const uiLocales = {
     landingIntroP1:
       'Open-digitalisation programme: free software and agile implementation of Barcelona City Council services that defines the process of profound, progressive change in the way the city will offer its services to the general public in coming years.',
     landingIntroP2:
-      "A decided change that puts the general public at the centre of designing &ldquo;digital by default&rdquo; government services focused on technological sovereignty, free software and open code, and the ethical use of data, in order to be more open and transparent. Using agile methodologies and open technologies in order to be more effective. And transforming public contracting in order to promote innovation in the local talent industry, strengthening the country's small and medium-sized companies. A change that eventually leads to a more open, simple and enriching relationship with the general public as a whole.",
+      "A decided change that puts the general public at the centre of designing “digital by default” government services focused on technological sovereignty, free software and open code, and the ethical use of data, in order to be more open and transparent. Using agile methodologies and open technologies in order to be more effective. And transforming public contracting in order to promote innovation in the local talent industry, strengthening the country's small and medium-sized companies. A change that eventually leads to a more open, simple and enriching relationship with the general public as a whole.",
     landingPdfUrl: 'http://ajuntament.barcelona.cat/digital/sites/default/files/LE_MesuradeGovern_EN_9en.pdf',
     landingCtaText: 'government measure for open digitisation',
     landingCtaAction: 'Download',
     navigationMenuDownloadPdf: 'Download PDF',
     navigationMenuGlossary: 'Guides glossary',
+    footerText1: 'This page was built using',
+    footerText2:
+      'All our work is licensed under a Creative Commons Attribution-NonCommercial - ShareAlike 4.0 International License, unless it says otherwise.We hope you find it useful.',
+    CCLicenseAlt: 'Creative Commons License',
+    footerLegalDisclaimer: 'Legal disclaimer',
+    footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/en/legal-disclaimer',
   },
   es: {
     manifesto: 'Manifesto',
@@ -38,6 +44,12 @@ const uiLocales = {
     landingCtaAction: 'Descargar',
     navigationMenuDownloadPdf: 'Descargar PDF',
     navigationMenuGlossary: 'Glosario de las guías',
+    footerText1: 'Esta página fue creada usando',
+    footerText2:
+      'Todo nuestro trabajo está licenciado bajo una licencia internacional Creative Commons Attribution-NonCommercial - ShareAlike 4.0, a menos que se indique lo contrario. Esperamos que lo encuentre útil.',
+    CCLicenseAlt: 'Llicència de Creative Commons',
+    footerLegalDisclaimer: 'Aviso legal',
+    footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/es/aviso-legal',
   },
   ca: {
     manifesto: 'Manifest',
@@ -56,15 +68,27 @@ const uiLocales = {
     landingCtaAction: 'Descarregar',
     navigationMenuDownloadPdf: 'Descarregar PDF',
     navigationMenuGlossary: 'Glossari de les guies',
+    footerText1: 'Aquesta pàgina va ser creada usant',
+    footerText2:
+      'Tot el nostre treball està sota una llicència Creative Commons Attribution-NonComercial - ShareAlike 4.0, llevat que digui el contrari. Esperem que us sigui útil.',
+    CCLicenseAlt: 'Llicència de Creative Commons',
+    footerLegalDisclaimer: 'Avís legal',
+    footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/ca/avis-legal',
   },
 }
 
 i18n.translations = { ...uiLocales }
 
 module.exports = (str, origin) => {
-  let language = 'en'
-  if (origin.data.root.page.attributes != undefined) {
-    language = origin.data.root.page.attributes.lang
+  let language
+  if (origin.data.root.page.attributes !== undefined) {
+    if (origin.data.root.page.attributes.lang !== undefined) {
+      language = origin.data.root.page.attributes.lang
+    } else {
+      language = 'en'
+    }
+  } else {
+    language = 'en'
   }
   i18n.locale = language
   return i18n !== undefined ? i18n.t(str) : str
