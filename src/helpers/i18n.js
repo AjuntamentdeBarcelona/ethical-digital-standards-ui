@@ -1,7 +1,6 @@
 // Translations helper
 'use strict'
 
-//const handlebars = require('handlebars')
 const i18n = require('i18n-js')
 const uiLocales = {
   en: {
