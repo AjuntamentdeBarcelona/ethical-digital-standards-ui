@@ -109,11 +109,12 @@
   &-intro__cta {
     text-align: center;
     margin-top: 3rem;
+    font-weight: bold;
 
     .btn {
-      font-size: 0.8rem;
+      margin-top: 0.3rem;
       display: inline-block;
-      padding: 1rem 1.5rem;
+      padding: 1rem 2rem;
     }
 
     &-action {
