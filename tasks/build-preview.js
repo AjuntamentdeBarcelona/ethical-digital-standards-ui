@@ -8,9 +8,6 @@ const { promisify } = require('util')
 const requireFromString = require('require-from-string')
 const vfs = require('vinyl-fs')
 const yaml = require('js-yaml')
-const i18n = require('i18n-js')
-
-const uiLocales = require('../locales/uiLocales.json')
 
 module.exports = async (src, dest, siteSrc, siteDest, sink) => {
   const [uiModel, layouts] = await Promise.all([
@@ -18,7 +15,6 @@ module.exports = async (src, dest, siteSrc, siteDest, sink) => {
     compileLayouts(src),
     registerPartials(src),
     registerHelpers(src),
-    loadTranslations(),
   ])
 
   const stream = vfs
@@ -74,15 +70,7 @@ function registerHelpers (src) {
       )
       .on('error', reject)
       .on('end', resolve)
-
-    handlebars.registerHelper('i18n', function (str) {
-      return i18n !== undefined ? i18n.t(str) : str
-    })
   })
-}
-
-function loadTranslations () {
-  i18n.translations = { ...uiLocales }
 }
 
 function compileLayouts (src) {
