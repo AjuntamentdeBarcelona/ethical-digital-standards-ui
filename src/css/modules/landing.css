@@ -2,7 +2,7 @@
   &-hero {
     background: #d8d8f5;
     overflow: hidden;
-    padding-top: var(--navbar-height);
+    /* padding-top: var(--navbar-height); */
   }
 
   &-hero__container {

@@ -16,7 +16,6 @@ html.is-clipped--navbar {
   display: flex;
   align-items: center;
   padding: 0 $sidebar-padding-sides;
-  position: fixed;
 
   a {
     color: $white;
@@ -27,14 +26,18 @@ html.is-clipped--navbar {
     padding-left: 0;
     margin-left: auto;
     font-size: 0.85rem;
-
-    @media (min-width: $screen-l) {
+    display: flex;
+    /* @media (min-width: $screen-l) {
       margin-right: 2.75rem;
-    }
+    } */
 
     li {
       display: inline-block;
-      margin-left: 2.5rem;
+      margin-left: 0.5rem;
+
+      @media (min-width: $screen-l) {
+        margin-left: 2.5rem;
+      }
     }
   }
 
@@ -266,7 +269,8 @@ html.is-clipped--navbar {
   .navbar-menu.is-active {
     display: block;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
-    max-height: calc(100vh - var(--navbar-height));
+    max-height: 100vh;
+    /* max-height: calc(100vh - var(--navbar-height)); */
     overflow-y: auto;
   }
 

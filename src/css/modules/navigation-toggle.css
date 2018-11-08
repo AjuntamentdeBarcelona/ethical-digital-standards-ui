@@ -1,7 +1,14 @@
-.navigation-toggle {
-  position: fixed;
+.navigation-toggle-wrapper {
+  position: sticky;
   z-index: $z-navigation-toggle;
-  top: calc(var(--navbar-height) + 0.5rem);
+  top: 0;
+  align-self: flex-start;
+}
+
+.navigation-toggle {
+  position: absolute;
+  z-index: $z-navigation-toggle;
+  top: 0.5rem;
   left: 0.5rem;
   color: $white;
   background-color: $secondary;
