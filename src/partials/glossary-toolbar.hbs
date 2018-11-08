@@ -1,9 +1,9 @@
 <div class="toolbar glossary__toolbar" role="navigation">
   <nav class="crumbs" role="navigation" aria-label="breadcrumbs">
-    <a href="{{siteRootPath}}/index.html" class="btn btn--mini"><i class="fas fa-chevron-left"></i>Back</a>
+    {{!-- <a href="{{siteRootPath}}/index.html" class="btn btn--mini"><i class="fas fa-chevron-left"></i>Back</a> --}}
   </nav>
   {{#if page.editUrl}}
-  <a href="{{page.editUrl}}" class="edit-this-page btn btn--secondary btn--mini" title="Edit page on Github" aria-label="Edit">
-    <i class="far fa-edit"></i>Edit on GitHub</a>
-  {{/if}}
+  <a href="{{page.editUrl}}" class="edit-this-page btn btn--secondary btn--mini" title={{i18n 'editGitTitle'}}
+    aria-label={{i18n 'editGitTitle'}}>
+    <i class="far fa-edit"></i>{{i18n 'editGit'}} </a> {{/if}}
 </div>

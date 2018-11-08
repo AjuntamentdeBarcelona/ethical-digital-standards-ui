@@ -31,6 +31,15 @@
   background-color: $secondary;
 }
 
+.btn--inverse {
+  background-color: $white;
+  color: $font-color;
+
+  &:hover {
+    color: $font-color-alt;
+  }
+}
+
 .btn--mini {
   padding-left: 1rem;
   padding-right: 1rem;

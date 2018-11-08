@@ -42,7 +42,7 @@
 
       h1 {
         font-size: 4rem;
-        line-height: 0.9;
+        line-height: 1;
       }
 
       h2 {
@@ -68,6 +68,32 @@
     }
   }
 
+  &-manifesto {
+    padding: 3rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: $white;
+    background-color: $secondary;
+
+    &__text {
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: $secondary;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
   &-intro {
     background: #d8d8f5;
     padding: 4rem 1rem 5rem;
@@ -89,7 +115,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: calc(50% - 1.5rem);
       width: 3rem;
@@ -109,11 +135,15 @@
   &-intro__cta {
     text-align: center;
     margin-top: 3rem;
+    font-weight: bold;
 
     .btn {
-      font-size: 0.9rem;
+      margin-top: 0.3rem;
       display: inline-block;
-      padding: 1rem 1.5rem;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.3rem;
     }
   }
 }
@@ -133,7 +163,7 @@
     position: absolute;
     bottom: 1.5rem;
     right: 1rem;
-    content: "";
+    content: '';
     width: 2rem;
     height: 2rem;
     background: url(../img/chevron-right-white.svg) no-repeat center center;
@@ -163,7 +193,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       width: 2rem;
