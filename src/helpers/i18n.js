@@ -7,11 +7,10 @@ const uiLocales = {
     manifesto: 'Manifesto',
     editGit: 'Edit on GitHub',
     editGitTitle: 'Edit page on GitHub',
-    landingTitle: 'Barcelona Ethical Digital Standards',
-    landingSubtitle:
-      'The Ethical Digital Standards of Barcelona City Council presented in an open and collaborative way.',
+    landingTitle: 'Open & Agile Digital Transformation Toolkit',
+    landingSubtitle: 'The Ethical Digital Standards of Barcelona City Council shared in a open and collaborative way.',
     landingIntroTitle: 'What is Ethical Digital Standards?',
-    landingManifestoText: 'A manifesto for Open and Ethical Digital Standards',
+    landingManifestoText: 'Manifesto in favor of technological sovereignty and digital rights for cities',
     landingManifestoCta: 'View manifesto',
     landingIntroP1:
       'Open-digitalisation programme: free software and agile implementation of Barcelona City Council services that defines the process of profound, progressive change in the way the city will offer its services to the general public in coming years.',
@@ -33,10 +32,10 @@ const uiLocales = {
     manifesto: 'Manifesto',
     editGit: 'Editar en GitHub',
     editGitTitle: 'Editar esta página en GitHub',
-    landingTitle: 'Barcelona Ethical Digital Standards',
+    landingTitle: 'Herramientas para una transformación digital abierta y ágil',
     landingSubtitle:
-      'Los Ethical Digital Standards del Ayuntamiento de Barcelona presentados de forma abierta y colaborativa.',
-    landingManifestoText: 'Manifesto por unos Estándares Digitales Abiertos y Éticos',
+      'Los Estándares Digitales Éticos del Ayuntamiento de Barcelona compartidos de una forma abierta y colaborativa.',
+    landingManifestoText: 'Manifiesto a favor de la soberanía tecnológica y los derechos digitales para las ciudades',
     landingManifestoCta: 'Ver manifesto',
     landingIntroTitle: '¿Qué es Ethical Digital Standards?',
     landingIntroP1:
@@ -59,10 +58,10 @@ const uiLocales = {
     manifesto: 'Manifest',
     editGit: 'Editar a GitHub',
     editGitTitle: 'Editar aquesta pàgina a GitHub',
-    landingTitle: 'Barcelona Ethical Digital Standards',
+    landingTitle: 'Eines per a una transformació digital oberta i àgil',
     landingSubtitle:
-      "Els Ethical Digital Standards de l'Ajuntament de Barcelona es presenten de forma oberta i col·laborativa.",
-    landingManifestoText: 'Manifest por uns Estàndards Digitals Oberts i Ètics',
+      'Els Estàndards Digitals Ètics de l’Ajuntament de Barcelona compartits de manera oberta i col·laborativa.',
+    landingManifestoText: 'Manifest a favor de la sobirania tecnològica i els drets digitals per a les ciutats',
     landingManifestoCta: 'Veure manifest',
     landingIntroTitle: 'Què és Ethical Digital Standards?',
     landingIntroP1:
