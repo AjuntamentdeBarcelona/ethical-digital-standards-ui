@@ -10,7 +10,7 @@ const uiLocales = {
     landingTitle: 'Ethical Digital Standards: A Policy ToolKit',
     landingSubtitle:
       'An open source Policy Toolkit for cities to develop digital policies that put citizens at the center and make Governments more open, transparent, and collaborative.',
-    landingIntroTitle: 'What are our Ethical Digital Standards?​',
+    landingIntroTitle: 'What are our Ethical Digital Standards?',
     landingManifestoText: 'Manifesto in favor of technological sovereignty and digital rights for cities',
     landingManifestoCta: 'View manifesto',
     landingIntroP1:
