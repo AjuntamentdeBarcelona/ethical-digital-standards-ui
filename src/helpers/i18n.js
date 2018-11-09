@@ -8,14 +8,17 @@ const uiLocales = {
     editGit: 'Edit on GitHub',
     editGitTitle: 'Edit page on GitHub',
     landingTitle: 'Open & Agile Digital Transformation Toolkit',
-    landingSubtitle: 'The Ethical Digital Standards of Barcelona City Council shared in an open and collaborative way.',
-    landingIntroTitle: 'What is Ethical Digital Standards?',
+    landingSubtitle:
+      'An open source Policy Toolkit for cities to develop digital policies that put citizens at the center and make Governments more open, transparent, and collaborative.',
+    landingIntroTitle: 'What are our Ethical Digital Standards?​',
     landingManifestoText: 'Manifesto in favor of technological sovereignty and digital rights for cities',
     landingManifestoCta: 'View manifesto',
     landingIntroP1:
-      'Open-digitalisation programme: free software and agile implementation of Barcelona City Council services that defines the process of profound, progressive change in the way the city will offer its services to the general public in coming years.',
+      'The Barcelona City Council Open Digitisation Plan defines a process of profound, progressive change in the way the city will develop and offer its services to its citizens. It aims for radical improvement in digital public services, based on our Ethical Digital Standards, including in particular the use of free software, open standards, data sovereignty, developing digital services in an agile manner, and ensuring privacy, ethics and security by design.',
     landingIntroP2:
-      "A decided change that puts the general public at the centre of designing “digital by default” government services focused on technological sovereignty, free software and open code, and the ethical use of data, in order to be more open and transparent. Using agile methodologies and open technologies in order to be more effective. And transforming public contracting in order to promote innovation in the local talent industry, strengthening the country's small and medium-sized companies. A change that eventually leads to a more open, simple and enriching relationship with the general public as a whole.",
+      'This is a decisive change that puts people first in the design of government services and reinforces their digital rights. The City strives for technological sovereignty for full control of its ICT services and infrastructures, and the ethical use of data to be more open and transparent, while delving data sovereignty to citizens. Agile development methodologies will make the City’s digital services more effective and by transforming public contracting, the City will promote innovation in local industry, strengthening small and medium-sized technology companies.',
+    landingIntroP3:
+      'Through the open data and data commons strategies, and the use of free software tools, Barcelona aims to guarantee improvements in transparency and interoperability based on open data formats and a set of interoperable and reusable applications and services, while adopting privacy-enhancing and rights-preserving technologies that protects citizens´s rights to information-self-dermination. This will lay the foundations for a people-centric digital future, so that cities can access a policy toolkit that will enable them to develop technologies and platforms based on citizens´ rights to bring long term societal innovation.',
     landingPdfUrl: 'http://ajuntament.barcelona.cat/digital/sites/default/files/LE_MesuradeGovern_EN_9en.pdf',
     landingCtaText: 'Government Measure for Open Digitisation (PDF)',
     landingCtaAction: 'Download',
@@ -32,16 +35,18 @@ const uiLocales = {
     manifesto: 'Manifesto',
     editGit: 'Editar en GitHub',
     editGitTitle: 'Editar esta página en GitHub',
-    landingTitle: 'Herramientas para una transformación digital abierta y ágil',
+    landingTitle: 'Herramientas para una Transformación Digital Abierta y Ágil',
     landingSubtitle:
-      'Los Estándares Digitales Éticos del Ayuntamiento de Barcelona compartidos de una forma abierta y colaborativa.',
+      'Un conjunto de herramientas de políticas de código abierto para que las ciudades desarrollen políticas digitales que pongan a los ciudadanos en el centro y hagan que los gobiernos sean más abiertos, transparentes y colaborativos.',
     landingManifestoText: 'Manifiesto a favor de la soberanía tecnológica y los derechos digitales para las ciudades',
     landingManifestoCta: 'Ver manifesto',
-    landingIntroTitle: '¿Qué es Ethical Digital Standards?',
+    landingIntroTitle: '¿Cuáles son nuestros Ethical Digital Standards?',
     landingIntroP1:
-      'Programa para la digitalización abierta: software libre y desarrollo ágil de servicios del Ayuntamiento de Barcelona que define el proceso de cambio profundo y progresivo de la manera en que la ciudad ofrecerá sus servicios a la ciudadanía en los próximos años.',
+      'El Plan de digitalización abierta del Ayuntamiento de Barcelona define un proceso de cambio profundo y progresivo en la forma en que la ciudad se desarrollará y ofrecerá sus servicios a sus ciudadanos. Su objetivo es una mejora radical en los servicios públicos digitales, basados en nuestros Estándares éticos digitales, que incluyen en particular el uso de software libre, estándares abiertos, soberanía de datos, desarrollo de servicios digitales de manera ágil y garantía de privacidad, ética y seguridad mediante el diseño.',
     landingIntroP2:
-      'Un cambio decidido que pone a la ciudadanía en el centro para diseñar un gobierno de servicios “digitales por defecto” enfocado a la soberanía tecnológica, al software libre y de código abierto, y al uso ético de los datos para ser más abierto y transparente, que utiliza metodologías ágiles y tecnologías abiertas para ser más efectivo y que transforma la contratación pública para impulsar la innovación del conjunto de la industria local de talento, potenciando las pequeñas y medianas empresas del país. Un cambio que dé lugar, finalmente, a una relación más abierta, sencilla y enriquecedora con el conjunto de la ciudadanía.',
+      'Este es un cambio decisivo que coloca a las personas primero en el diseño de los servicios gubernamentales y refuerza sus derechos digitales. La Ciudad se esfuerza por lograr la soberanía tecnológica para el control total de sus servicios e infraestructuras de TIC, y el uso ético de los datos para que sea más abierto y transparente, al tiempo que profundiza la soberanía de los datos para los ciudadanos. Las metodologías de desarrollo ágil harán que los servicios digitales de la Ciudad sean más efectivos y, al transformar la contratación pública, la Ciudad promoverá la innovación en la industria local, fortaleciendo a las pequeñas y medianas empresas de tecnología.',
+    landingIntroP3:
+      'A través de las estrategias open data y data commons, y el uso de herramientas de software gratuitas, Barcelona pretende garantizar mejoras en la transparencia e interoperabilidad basadas en formatos de datos abiertos y un conjunto de aplicaciones y servicios interoperables y reutilizables, al tiempo que adopta la mejora de la privacidad y los derechos.Preservar tecnologías que protejan el derecho de los ciudadanos a la autodeterminación de la información.Esto sentará las bases para un futuro digital centrado en las personas, para que las ciudades puedan acceder a un conjunto de herramientas de políticas que les permita desarrollar tecnologías y plataformas basadas en los derechos de los ciudadanos para generar innovación social a largo plazo.',
     landingPdfUrl: 'http://ajuntament.barcelona.cat/digital/sites/default/files/LE_MesuradeGovern_ESP_9en.pdf',
     landingCtaText: 'Medida del Gobierno para la Digitalización Abierta (PDF)',
     landingCtaAction: 'Descargar',
@@ -58,16 +63,18 @@ const uiLocales = {
     manifesto: 'Manifest',
     editGit: 'Editar a GitHub',
     editGitTitle: 'Editar aquesta pàgina a GitHub',
-    landingTitle: 'Eines per a una transformació digital oberta i àgil',
+    landingTitle: 'Eines per a una Transformació Digital Oberta i Àgil',
     landingSubtitle:
-      'Els Estàndards Digitals Ètics de l’Ajuntament de Barcelona compartits de manera oberta i col·laborativa.',
+      'Un conjunt d´eines de polítiques de codi obert perquè les ciutats desenvolupin polítiques digitals que posin als ciutadans en el centre i facin que els governs siguin més oberts, transparents i col·laboratius.',
     landingManifestoText: 'Manifest a favor de la sobirania tecnològica i els drets digitals per a les ciutats',
     landingManifestoCta: 'Veure manifest',
-    landingIntroTitle: 'Què és Ethical Digital Standards?',
+    landingIntroTitle: 'Quins són els nostres Ethical Digital Standards?',
     landingIntroP1:
-      'El programa per a la Digitalització Oberta: Programari Lliure i Desenvolupament Àgil de Serveis de l’Ajuntament de Barcelona defineix el procés de canvi profund i progressiu de la manera en que la ciutat oferirà els seus serveis a la ciutadania en els propers anys.',
+      'El Pla de digitalització oberta de l´Ajuntament de Barcelona defineix un procés de canvi profund i progressiu en la forma en què la ciutat es desenvoluparà i oferirà els seus serveis als seus ciutadans.El seu objectiu és una millora radical en els serveis públics digitals, basats en els nostres Estàndards ètics digitals, que inclouen en particular l´ús de programari lliure, estàndards oberts, sobirania de dades, desenvolupament de serveis digitals de manera àgil i garantia de privacitat, ètica i seguretat mitjançant el disseny.',
     landingIntroP2:
-      'Un canvi decidit que posa a la ciutadania al centre per dissenyar un govern de serveis “digitals per defecte” enfocat a la sobirania tecnològica, al programari lliure i de codi obert, i a l’ús ètic de les dades per ser més obert i transparent. Que utilitza metodologies àgils i tecnologies obertes per ser més efectiu. I que transforma la contractació pública per impulsar la innovació del conjunt de la industria local de talent, potenciant les petites i mitjanes empreses del país. Un canvi que doni lloc, finalment, a una relació més oberta, senzilla i enriquidora amb el conjunt de la ciutadania.',
+      'Aquest és un canvi decisiu que col·loca a les persones primer en el disseny dels serveis governamentals i reforça els seus drets digitals. La Ciutat s´esforça per aconseguir la sobirania tecnològica per al control total dels seus serveis i infraestructures de TIC, i l´ús ètic de les dades perquè sigui més obert i transparent, alhora que aprofundeix la sobirania de les dades per als ciutadans. Les metodologies de desenvolupament àgil faran que els serveis digitals de la Ciutat siguin més efectius i, en transformar la contractació pública, la Ciutat promourà la innovació en la indústria local, enfortint a les petites i mitjanes empreses de tecnologia.',
+    landingIntroP3:
+      'A través de les estratègies open data i data commons, i l´ús d´eines de programari gratuïtes, Barcelona pretén garantir millores en la transparència i interoperabilitat basades en formats de dades obertes i un conjunt d´aplicacions i serveis interoperables i reutilitzables, alhora que adopta la millora de la privacitat i els derechos.Preservar tecnologies que protegeixin el dret dels ciutadans a l´autodeterminació de la informació.Això establirà les bases per a un futur digital centrat en les persones, perquè les ciutats puguin accedir a un conjunt d´eines de polítiques que els permeti desenvolupar tecnologies i plataformes basades en els drets dels ciutadans per generar innovació social a llarg termini.',
     landingPdfUrl: 'http://ajuntament.barcelona.cat/digital/sites/default/files/le_mesuradegovern_v2.pdf',
     landingCtaText: 'Mesura del Govern per a la Digitalització Oberta (PDF)',
     landingCtaAction: 'Descarregar',

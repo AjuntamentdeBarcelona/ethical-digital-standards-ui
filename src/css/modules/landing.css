@@ -10,43 +10,48 @@
     margin: 0 auto;
 
     img {
-      margin-top: 10%;
+      margin-top: -10%;
       display: block;
 
-      @media screen and (min-width: 769px) {
+      /* @media screen and (min-width: 769px) {
         margin-top: -10%;
-      }
+      } */
     }
   }
 
   &-hero__title {
     margin: 0;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1.5rem 1.5rem;
     background: $tertiary;
-    color: $white;
 
     h1 {
-      font-size: 2.25rem;
+      font-size: 1.75rem;
       line-height: 1.1;
-      margin: 0 0 1rem;
+      margin: 0 0 0.5rem;
+      color: $white;
+
+      @media screen and (min-width: 769px) {
+        font-size: 2.25rem;
+      }
     }
 
     h2 {
       margin: 0;
-      font-size: 1.25rem;
-      line-height: 1;
+      font-size: 1rem;
+      line-height: 1.1;
+      font-weight: normal;
     }
 
     @media screen and (min-width: 769px) {
-      margin: 0 1.8rem;
+      margin: 0 1rem;
 
       h1 {
-        font-size: 4rem;
+        font-size: 3.3rem;
         line-height: 1;
       }
 
       h2 {
-        font-size: 2.25rem;
+        font-size: 1.25rem;
       }
     }
   }
@@ -54,7 +59,7 @@
   &__cards {
     list-style: none;
     padding: 0;
-    max-width: 64.5rem;
+    max-width: 75rem;
     margin: 0 auto;
 
     @media screen and (min-width: 769px) {
@@ -76,7 +81,11 @@
     background-color: $secondary;
 
     &__text {
-      font-size: 1.5rem;
+      font-size: 1rem;
+
+      @media screen and (min-width: 769px) {
+        font-size: 1.5rem;
+      }
     }
 
     .btn {
@@ -85,8 +94,12 @@
       padding: 1rem 2rem;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: $secondary;
+
+      @media screen and (min-width: 769px) {
+        font-size: 1.3rem;
+      }
 
       &:hover {
         color: $secondary;
@@ -103,6 +116,10 @@
     max-width: 45rem;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
 
   &-intro__title {
@@ -158,6 +175,7 @@
   font-size: 1.5rem;
   transition: all 0.3s;
   position: relative;
+  overflow-x: hidden;
 
   &::after {
     position: absolute;
