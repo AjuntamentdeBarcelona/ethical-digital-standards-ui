@@ -1,9 +1,9 @@
 .main-wrapper {
   display: flex;
-  padding-top: calc(var(--navbar-height) + 1rem);
+  /* padding-top: calc(var(--navbar-height) + 1rem); */
 
   @media (min-width: $screen-l) {
-    padding-top: var(--navbar-height);
+    /* padding-top: var(--navbar-height); */
   }
 }
 
@@ -18,4 +18,3 @@
     }
   }
 }
-
