@@ -7,10 +7,10 @@ const uiLocales = {
     manifesto: 'Manifesto',
     editGit: 'Edit on GitHub',
     editGitTitle: 'Edit page on GitHub',
-    landingTitle: 'Open & Agile Digital Transformation Toolkit',
+    landingTitle: 'Ethical Digital Standards: A Policy ToolKit',
     landingSubtitle:
       'An open source Policy Toolkit for cities to develop digital policies that put citizens at the center and make Governments more open, transparent, and collaborative.',
-    landingIntroTitle: 'What are our Ethical Digital Standards?​',
+    landingIntroTitle: 'What are our Ethical Digital Standards?',
     landingManifestoText: 'Manifesto in favor of technological sovereignty and digital rights for cities',
     landingManifestoCta: 'View manifesto',
     landingIntroP1:
@@ -35,12 +35,12 @@ const uiLocales = {
     manifesto: 'Manifesto',
     editGit: 'Editar en GitHub',
     editGitTitle: 'Editar esta página en GitHub',
-    landingTitle: 'Herramientas para una Transformación Digital Abierta y Ágil',
+    landingTitle: 'Estándares Éticos Digitales: Herramientas de políticas y directrices',
     landingSubtitle:
       'Un conjunto de herramientas de políticas de código abierto para que las ciudades desarrollen políticas digitales que pongan a los ciudadanos en el centro y hagan que los gobiernos sean más abiertos, transparentes y colaborativos.',
     landingManifestoText: 'Manifiesto a favor de la soberanía tecnológica y los derechos digitales para las ciudades',
     landingManifestoCta: 'Ver manifesto',
-    landingIntroTitle: '¿Cuáles son nuestros Ethical Digital Standards?',
+    landingIntroTitle: '¿Cuáles son nuestros Estándares Éticos Digitales?',
     landingIntroP1:
       'El Plan de digitalización abierta del Ayuntamiento de Barcelona define un proceso de cambio profundo y progresivo en la forma en que la ciudad se desarrollará y ofrecerá sus servicios a sus ciudadanos. Su objetivo es una mejora radical en los servicios públicos digitales, basados en nuestros Estándares éticos digitales, que incluyen en particular el uso de software libre, estándares abiertos, soberanía de datos, desarrollo de servicios digitales de manera ágil y garantía de privacidad, ética y seguridad mediante el diseño.',
     landingIntroP2:
@@ -63,12 +63,12 @@ const uiLocales = {
     manifesto: 'Manifest',
     editGit: 'Editar a GitHub',
     editGitTitle: 'Editar aquesta pàgina a GitHub',
-    landingTitle: 'Eines per a una Transformació Digital Oberta i Àgil',
+    landingTitle: 'Estàndards Ètics Digitals: Eines de polítiques i directrius',
     landingSubtitle:
       'Un conjunt d´eines de polítiques de codi obert perquè les ciutats desenvolupin polítiques digitals que posin als ciutadans en el centre i facin que els governs siguin més oberts, transparents i col·laboratius.',
     landingManifestoText: 'Manifest a favor de la sobirania tecnològica i els drets digitals per a les ciutats',
     landingManifestoCta: 'Veure manifest',
-    landingIntroTitle: 'Quins són els nostres Ethical Digital Standards?',
+    landingIntroTitle: 'Quins són els nostres Estàndards Ètics Digitals?',
     landingIntroP1:
       'El Pla de digitalització oberta de l´Ajuntament de Barcelona defineix un procés de canvi profund i progressiu en la forma en què la ciutat es desenvoluparà i oferirà els seus serveis als seus ciutadans.El seu objectiu és una millora radical en els serveis públics digitals, basats en els nostres Estàndards ètics digitals, que inclouen en particular l´ús de programari lliure, estàndards oberts, sobirania de dades, desenvolupament de serveis digitals de manera àgil i garantia de privacitat, ètica i seguretat mitjançant el disseny.',
     landingIntroP2:
