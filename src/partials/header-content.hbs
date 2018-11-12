@@ -1,5 +1,17 @@
 <header class="header" role="banner">
+  {{#ifEquals page.attributes.lang "en"}}
   {{> cityhallbar-en}}
+  {{/ifEquals}}
+  {{#ifEquals page.attributes.lang "es"}}
+  {{> cityhallbar-es}}
+  {{/ifEquals}}
+  {{#ifEquals page.attributes.lang "ca"}}
+  {{> cityhallbar-ca}}
+  {{/ifEquals}}
+  {{#ifEquals page.attributes.lang ""}}
+  {{> cityhallbar-en}}
+  {{/ifEquals}}
+
   <nav class="navbar">
     <a class="navbar__logo" href="{{siteRootPath}}/index.html">
       {{site.title}}&nbsp;<span class="navbar__beta">Beta</span>
