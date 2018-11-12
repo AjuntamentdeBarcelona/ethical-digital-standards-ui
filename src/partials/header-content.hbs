@@ -13,7 +13,7 @@
   {{/ifEquals}}
 
   <nav class="navbar">
-    <a class="navbar__logo" href="{{siteRootPath}}/index.html">
+    <a class="navbar__logo" href="{{siteRootPath}}/{{{or page.attributes.lang 'en'}}}/">
       {{site.title}}&nbsp;<span class="navbar__beta">Beta</span>
     </a>
     <ul class="navbar__links">
