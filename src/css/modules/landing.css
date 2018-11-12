@@ -170,12 +170,17 @@
   color: $white;
   padding: 1.5rem;
   margin: 1rem;
-  min-height: 12rem;
+  min-height: 8rem;
   display: flex;
-  font-size: 1.5rem;
   transition: all 0.3s;
   position: relative;
   overflow-x: hidden;
+  font-size: 1rem;
+
+  @media screen and (min-width: 769px) {
+    font-size: 1.5rem;
+    min-height: 12rem;
+  }
 
   &::after {
     position: absolute;
