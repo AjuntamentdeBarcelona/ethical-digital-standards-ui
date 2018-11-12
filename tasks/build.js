@@ -79,7 +79,22 @@ module.exports = (src, dest) => {
 
     vfs.src('img/**/*.{jpg,ico,png,svg}', opts).pipe(imagemin()),
 
-    vfs.src('helpers/*.js', opts),
+    // vfs.src('helpers/*.js', opts),
+
+    vfs
+      .src('helpers/*.js', opts)
+      .pipe(
+        // see https://gulpjs.org/recipes/browserify-multiple-destination.html
+        map((file, next) => {
+          file.contents = browserify(file.relative, {
+            basedir: src,
+            node: true,
+            standalone: file.stem,
+          }).bundle()
+          next(null, file)
+        })
+      )
+      .pipe(buffer()),
 
     vfs.src('layouts/*.hbs', opts),
 
