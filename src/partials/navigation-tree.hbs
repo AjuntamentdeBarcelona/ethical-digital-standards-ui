@@ -1,24 +1,21 @@
 {{#if navigation.length}}
   <ul class="nav-list">
     {{#each navigation}}
-      {{log "fullnav:" .}}
       <li class="nav-item{{#if (eq @root.page.url ./url)}} is-current-page{{/if}}" data-depth="{{or ../level 0}}">
-        {{#if (and ./content (or ./level (not (eq ./content '$$BOTTOM'))))}}
-          {{#if ./url}}
-            <a class="nav-link" href="
-              {{~#if (eq ./urlType 'internal')~}}
-                {{{relativize @root.page.url ./url}}}
-              {{~else~}}
-                {{{./url}}}
-              {{~/if~}}
-            ">{{{./content}}}</a>
-            {{#if ./items.length}}
-              <button class="nav-toggle"><i class="fas fa-chevron-down"></i></button>
-            {{/if}}
+        {{#if ./url}}
+          <a class="nav-link" href="
+            {{~#if (eq ./urlType 'internal')~}}
+              {{{relativize @root.page.url ./url}}}
+            {{~else~}}
+              {{{./url}}}
+            {{~/if~}}
+          ">{{{./content}}}</a>
+          {{#if ./items.length}}
+            <button class="nav-toggle"><i class="fas fa-chevron-down"></i></button>
+          {{/if}}
           {{else}}
             <span class="nav-text">{{{./content}}}</span>
           {{/if}}
-        {{/if}}
         {{> navigation-tree navigation=./items level=(increment ../level)}}
       </li>
     {{/each}}

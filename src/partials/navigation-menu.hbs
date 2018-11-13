@@ -1,19 +1,22 @@
-{{#if page.navigation}}
+{{#if (and page.navigation page.navigation.length)}}
   <div class="navigation-menu is-active" data-panel="menu">
     <nav class="nav-menu">
-      {{> navigation-tree navigation=page.navigation}}
+      {{#each page.navigation}}
+        {{#if ./content}}
+          {{#if (eq ./content '$$MAIN')}}
+            {{> navigation-tree navigation=./items}}
+          {{/if}}
+        {{else}}
+          {{> navigation-tree navigation=./items}}
+        {{/if}}
+      {{/each}}
     </nav>
   </div>
   <div class="navigation__bottom">
-    {{#if page.navigation.length}}
-      {{#each page.navigation}}
-        {{#each ./items}}
-          {{#if (and ./content (eq ./content '$$BOTTOM'))}}
-            {{log "items:" ./items}}
-            {{> navigation-bottom navigation=./items}}
-          {{/if}}
-        {{/each}}
-      {{/each}}
-    {{/if}}
+    {{#each page.navigation}}
+      {{#if (and ./content (eq ./content '$$BOTTOM'))}}
+        {{> navigation-bottom navigation=./items}}
+      {{/if}}
+    {{/each}}
   </div>
 {{/if}}
