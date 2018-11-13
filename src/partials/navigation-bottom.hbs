@@ -1,0 +1,24 @@
+{{#if navigation.length}}
+  {{#each navigation}}
+    {{#if ./url}}
+      {{#if (eq ./urlType 'internal')}}
+        <div class="glossary-link">
+          <a href="{{relativize @root.page.url ./url}}">
+            <i class="fas fa-book"></i>
+            <span class="glossary-link__text">{{./content}}</span>
+          </a>
+        </div>
+      {{/if}}
+      {{#if (eq ./urlType 'external')}}
+        <div class="pdf-link">
+          <a href="{{./url}}">
+            <i class="fas fa-file-pdf"></i>
+            <span class="pdf-link__text">{{./content}}</span>
+          </a>
+        </div>
+      {{/if}}
+    {{else}}
+      {{log "Warning:" "What to do with a non-pdf, non-glossary item?"}}
+    {{/if}}
+  {{/each}}
+{{/if}}

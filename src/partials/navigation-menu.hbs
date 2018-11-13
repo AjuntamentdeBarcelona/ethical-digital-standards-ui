@@ -1,34 +1,22 @@
-{{#if page.navigation}}
-<div class="navigation-menu is-active" data-panel="menu">
-  <nav class="nav-menu">
-    {{#with page.componentVersion}}
-    <!-- <h3 class="title"><a href="{{relativize page.url page.componentVersion.url}}">{{page.component.title}}</a></h3> -->
-    {{!-- <h3 class="title"><a href="{{{relativize @root.page.url ./url}}}">{{{./title}}}</a></h3> --}}
-    {{/with}}
-    {{> navigation-tree navigation=page.navigation}}
-  </nav>
-</div>
+{{#if (and page.navigation page.navigation.length)}}
+  <div class="navigation-menu is-active" data-panel="menu">
+    <nav class="nav-menu">
+      {{#each page.navigation}}
+        {{#if ./content}}
+          {{#if (eq ./content '$$MAIN')}}
+            {{> navigation-tree navigation=./items}}
+          {{/if}}
+        {{else}}
+          {{> navigation-tree navigation=./items}}
+        {{/if}}
+      {{/each}}
+    </nav>
+  </div>
+  <div class="navigation__bottom">
+    {{#each page.navigation}}
+      {{#if (and ./content (eq ./content '$$BOTTOM'))}}
+        {{> navigation-bottom navigation=./items}}
+      {{/if}}
+    {{/each}}
+  </div>
 {{/if}}
-<div class="navigation__bottom">
-  {{#with (pdfpath page) as |path|}}
-  <div class="pdf-link">
-    <a href="{{page.component.url}}{{path}}">
-      <i class="fas fa-file-pdf"></i>
-      <span class="pdf-link__text">{{i18n 'navigationMenuDownloadPdf'}}</span>
-    </a>
-  </div>
-  {{/with}}
-  <div class="glossary-link">
-    {{#if site.components.glossary.latest.url }}
-    <a href="{{{relativize page.url site.components.glossary.latest.url}}}">
-      <i class="fas fa-book"></i>
-      <span class="glossary-link__text">{{i18n 'navigationMenuGlossary'}}</span>
-    </a>
-    {{else}}
-    <a href="#">
-      <i class="fas fa-book"></i>
-      <span class="glossary-link__text">{{i18n 'navigationMenuGlossary'}}</span>
-    </a>
-    {{/if}}
-  </div>
-</div>
