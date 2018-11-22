@@ -1,0 +1,9 @@
+.debug-row {
+  display: flex;
+  font-size: 0.7em;
+}
+
+.debug-column {
+  flex: 50%;
+  font-size: 0.7em;
+}
