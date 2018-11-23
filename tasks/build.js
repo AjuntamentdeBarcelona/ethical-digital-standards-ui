@@ -73,7 +73,7 @@ module.exports = (src, dest) => {
       .pipe(buffer())
       .pipe(uglify()),
 
-    vfs.src('css/site.css', opts).pipe(postcss(postcssPlugins)),
+    vfs.src('css/{pdf,site}.css', opts).pipe(postcss(postcssPlugins)),
 
     vfs.src('font/*.woff*(2)', opts),
 
