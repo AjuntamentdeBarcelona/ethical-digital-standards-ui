@@ -2,6 +2,7 @@
 @import 'base/fonts.css';
 @import 'base/variables.css';
 @import 'base/base.css';
+@import 'base/debug.css';
 @import 'modules/main.css';
 @import 'modules/header.css';
 @import 'modules/footer.css';

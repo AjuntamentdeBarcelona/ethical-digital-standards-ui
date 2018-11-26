@@ -1,0 +1,23 @@
+#toc li {
+  margin-top: 0.25em;
+}
+
+#toc li div {
+  border-bottom: 1pt dotted blue;
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+.toctext::before {
+  content: target-text(attr(href));
+}
+
+.tocpagenr {
+  float: right;
+}
+
+.tocpagenr::after {
+  content: target-counter(attr(href), page);
+}

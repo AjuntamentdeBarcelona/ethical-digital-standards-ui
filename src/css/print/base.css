@@ -1,0 +1,47 @@
+#toc {
+  page: toc;
+}
+
+.page-second {
+  page: second;
+  page-break-before: always;
+  page-break-after: always;
+}
+
+#preamble + div {
+  page: contents-begin;
+}
+
+div {
+  orphans: 2;
+}
+
+div > hr {
+  display: none;
+  visibility: hidden;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  string-set: doctitle content();
+  bookmark-level: none;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+
+h2 {
+  string-set: current-section content();
+  page-break-before: right;
+}
+
+html {
+  hyphens: auto;
+}

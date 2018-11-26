@@ -1,0 +1,105 @@
+/* stylelint-disable at-rule-no-unknown */
+@media print {
+  body {
+    background-color: white;
+  }
+}
+
+@page {
+  size: A4 portrait;
+
+  @top-left {
+    color: #888;
+    font-family: "DejaVu Sans", sans-serif;
+    font-style: normal;
+    line-height: 1;
+    /* border-bottom: .25pt solid #888; */
+  }
+
+  @top-right {
+    color: #888;
+    font-family: "DejaVu Sans", sans-serif;
+    font-style: normal;
+    line-height: 1;
+    /* border-bottom: .25pt solid #888; */
+  }
+
+  @bottom-center {
+    content: counter(page);
+    color: #888;
+    font-family: "DejaVu Sans", sans-serif;
+    font-style: normal;
+    line-height: 1;
+    /* border-top: .25pt solid #888; */
+  }
+}
+
+@page :left {
+  @top-left {
+    content: string(doctitle) " - Ajuntament de Barcelona";
+  }
+
+  @top-right {
+    content: string(current-section);
+  }
+}
+
+@page :right {
+  @top-left {
+    content: string(current-section);
+  }
+
+  @top-right {
+    content: string(doctitle) " - Ajuntament de Barcelona";
+  }
+}
+
+@page :first {
+  @top-left {
+    content: none;
+  }
+
+  @top-center {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page second {
+  @top-left {
+    content: none;
+  }
+
+  @top-center {
+    content: none;
+  }
+
+  @top-right {
+    content: none;
+  }
+
+  @bottom-center {
+    content: counter(page, lower-roman);
+  }
+}
+
+@page toc {
+  page-break-before: right;
+
+  @bottom-center {
+    content: counter(page, lower-roman);
+  }
+}
+
+@page :blank {
+  @bottom-center {
+    content: none;
+  }
+}
