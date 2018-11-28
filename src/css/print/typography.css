@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  color: $font-color;
 }
 
 h1,
@@ -10,4 +11,40 @@ h5,
 h6 {
   font-weight: normal;
   font-family: 'Open Sans Condensed';
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+  color: $primary;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+  color: $primary;
+  margin-top: 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: $secondary;
+  text-transform: uppercase;
+  border-bottom: 1px solid $secondary;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: $primary;
+  border-bottom: 1px solid $primary;
+}
+
+.paragraph {
+  font-size: 12px;
 }

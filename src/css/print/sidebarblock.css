@@ -1,0 +1,22 @@
+.sidebarblock {
+  border: 3px solid $primary;
+  padding: 1em;
+  margin-bottom: 1em;
+  break-inside: avoid;
+}
+
+.sidebarblock .title {
+  margin: -1em -1em 1em;
+  padding: 1em;
+  background-color: $primary-light;
+  color: $primary;
+  font-weight: 600;
+}
+
+.sidebarblock .sidebarblock {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: $primary;
+}

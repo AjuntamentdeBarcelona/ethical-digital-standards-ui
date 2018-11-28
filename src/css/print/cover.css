@@ -1,0 +1,9 @@
+@page :first {
+  background-image: url(../img/logo.png);
+  background-position: right -2cm top -1.5cm;
+  background-repeat: no-repeat;
+}
+
+.my-authors-class {
+  display: none;
+}

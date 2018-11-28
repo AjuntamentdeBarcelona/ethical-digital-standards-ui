@@ -1,0 +1,12 @@
+sup.footnote a {
+  text-decoration: none;
+}
+
+div.footnote {
+  margin-bottom: 1em;
+  font-size: 12px;
+}
+
+div.footnote a {
+  text-decoration: none;
+}
