@@ -1,17 +1,53 @@
+#toc {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#toc h3 {
+  color: $secondary;
+  border-bottom: 0;
+  margin-top: 0;
+}
+
+#toc .sectlevel1 {
+  padding: 0;
+}
+
 #toc li {
-  margin-top: 0.25em;
+  margin-top: 0.5em;
+  list-style: none;
 }
 
 #toc li div {
-  border-bottom: 1pt dotted blue;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    border-bottom: 2pt dotted $primary;
+    z-index: -1;
+  }
 }
 
 #toc a {
   text-decoration: none;
+  color: $primary;
 }
 
 .toctext::before {
   content: target-text(attr(href));
+  background: white;
+  padding-right: 2px;
+}
+
+#toc .sectlevel2 .toctext::before,
+#toc .sectlevel3 .toctext::before,
+#toc .sectlevel4 .toctext::before,
+#toc .sectlevel5 .toctext::before {
+  font-size: 90%;
 }
 
 .tocpagenr {
@@ -20,4 +56,6 @@
 
 .tocpagenr::after {
   content: target-counter(attr(href), page);
+  background: white;
+  padding-left: 2px;
 }

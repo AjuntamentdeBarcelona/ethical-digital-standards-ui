@@ -39,7 +39,7 @@ h5 {
 
 h2 {
   string-set: current-section content();
-  page-break-before: right;
+  page-break-before: always;
 }
 
 html {

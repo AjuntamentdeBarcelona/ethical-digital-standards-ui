@@ -1,0 +1,20 @@
+.ulist ul,
+.olist ol {
+  margin: 0;
+  padding-left: 1em;
+}
+
+.ulist li,
+.olist li {
+  color: $primary;
+}
+
+.olist li {
+  font-size: 12px;
+}
+
+.ulist li *,
+.olist li * {
+  color: $font-color;
+  font-size: 12px;
+}

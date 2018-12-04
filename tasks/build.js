@@ -75,7 +75,7 @@ module.exports = (src, dest) => {
 
     vfs.src('css/{pdf,site}.css', opts).pipe(postcss(postcssPlugins)),
 
-    vfs.src('font/*.woff*(2)', opts),
+    vfs.src('font/*.*', opts),
 
     vfs.src('img/**/*.{jpg,ico,png,svg}', opts).pipe(imagemin()),
 
