@@ -26,7 +26,7 @@ const uiLocales = {
     navigationMenuGlossary: 'Guides glossary',
     footerText1: 'This page was built using',
     footerText2:
-      'All our work is licensed under a Creative Commons Attribution-NonCommercial - ShareAlike 4.0 International License, unless it says otherwise.We hope you find it useful.',
+      'All our content is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, unless it says otherwise.We hope you find it useful.',
     CCLicenseAlt: 'Creative Commons License',
     footerLegalDisclaimer: 'Legal disclaimer',
     footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/en/legal-disclaimer',
@@ -54,7 +54,7 @@ const uiLocales = {
     navigationMenuGlossary: 'Glosario de las guías',
     footerText1: 'Esta página fue creada usando',
     footerText2:
-      'Todo nuestro trabajo está licenciado bajo una licencia internacional Creative Commons Attribution-NonCommercial - ShareAlike 4.0, a menos que se indique lo contrario. Esperamos que lo encuentre útil.',
+      'Todo nuestro contenido está licenciado bajo una licencia internacional Creative Commons Attribution-ShareAlike 4.0, a menos que se indique lo contrario. Esperamos que lo encuentre útil.',
     CCLicenseAlt: 'Llicència de Creative Commons',
     footerLegalDisclaimer: 'Aviso legal',
     footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/es/aviso-legal',
@@ -82,7 +82,7 @@ const uiLocales = {
     navigationMenuGlossary: 'Glossari de les guies',
     footerText1: 'Aquesta pàgina va ser creada usant',
     footerText2:
-      'Tot el nostre treball està sota una llicència Creative Commons Attribution-NonComercial - ShareAlike 4.0, llevat que digui el contrari. Esperem que us sigui útil.',
+      'Tot el nostre contingut està sota una llicència Creative Commons Attribution-ShareAlike 4.0, llevat que digui el contrari. Esperem que us sigui útil.',
     CCLicenseAlt: 'Llicència de Creative Commons',
     footerLegalDisclaimer: 'Avís legal',
     footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/ca/avis-legal',
