@@ -1,4 +1,4 @@
-= Antora Default UI
+= Ethical Digital Standards UI
 // Settings:
 :experimental:
 :hide-uri-scheme:
