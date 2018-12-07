@@ -9,7 +9,6 @@
 :uri-promoter: https://github.com/AjuntamentdeBarcelona
 :uri-project-site: https://github.com/AjuntamentdeBarcelona/ethical-digital-standards-site
 :uri-base-project: https://gitlab.com/antora/antora-ui-default
-// :uri-preview: https://antora.gitlab.io/antora-ui-default
 
 // External URIs:
 :uri-antora: https://antora.org
@@ -21,26 +20,20 @@
 :uri-nvm: https://github.com/creationix/nvm
 :uri-nvm-install: {uri-nvm}#installation
 :uri-yarn: https://yarnpkg.com
-
+:uri-handlebars: http://handlebarsjs.com/
+:uri-postcss: https://postcss.org/
+:uri-weasyprint: https://weasyprint.org/
+:uri-weasyprint-docs: https://weasyprint.readthedocs.io/
+:uri-asciidoc: http://www.methods.co.nz/asciidoc/
 
 This project is part of the {uri-public-website}[Barcelona Ethical Digital Standards] initiative by the {uri-promoter}[Barcelona City Hall].
 The aim of this project is to provide a User Interface for the guides and landing page generated with the {uri-project-site}[Ethical Digital Standards Site] project.
 
 This UI project is based on {uri-base-project}[Antora Default UI], where you can find out more information and documentation. You can also find out more about the Antora project at the {uri-antora}[Antora website].
 
-// == Use the Default UI
-
-// If you want to use the default UI for your Antora-generated site, add the following UI configuration to your playbook:
-
-// [source,yaml,subs=attributes+]
-// ----
-// ui:
-//   bundle: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
-// ----
-
 The Ethical Digital Standards UI can be used as a standalone with demo content; or in combination with {uri-project-site}[Ethical Digital Standards Site], with proper content: the guides and the landing page.
 
-== Installation
+== Installation & Use
 
 === Prerequisites
 
@@ -152,12 +145,29 @@ This works by monitoring the project for changes, running the `build` task if a 
 
 Press kbd:[Ctrl+C] to stop the preview server and end the continuous build.
 
-=== Package for Use with Antora
+=== Package for Use with Antora/Ethical Digital Standards Site
 
 In order to preview the UI on the real site in local development, run the following command:
 
  $ gulp pack
 
 The UI bundle will be available at [.path]_build/ui-bundle.zip_.
-You can then point Antora at this bundle using the `--ui-bundle` command-line option.
+You can then point the Antora/Site project at this bundle in the site.yml or site-local.yml configuration.
 
+== Updating the UI
+
+=== Content/guides structure
+Guides content is structured using the {uri-asciidoc}[AsciiDoc syntax] and developed in separate repositories, loaded through the {uri-project-site}[Ethical Digital Standards Site] project.
+
+=== HTML structure
+This project is using {uri-handlebars}[Handlebars] for templating. Please checkout its documentation for further reference.
+
+Translations are handled with an i18n helper. You can use it as in `{{i18n 'NameOfTheString'}}` where `NameOfTheString` is the code name for the translation string. You can find out the translation files in `/src/helpers/i18n.js`.
+
+=== CSS structure
+This project is using {uri-postcss}[PostCSS] and Gulp to pre-process the CSS files. A Scss interpreter plugin was added to allow simple CSS nesting and Scss variables.
+
+You can find the main template variables (colors, fonts, breakpoints…) in the `src/css/base/variables.css` file.
+
+=== PDF styling
+Ethical Digital Standards Site's generated PDF files are generated using {uri-weasyprint}[Weasyprint]. You can find out the styles used in this UI to present these PDF files in the `src/css/print/` folder, and further documentation regarding PDF styling in {uri-weasyprint-docs}[Weasyprint documentation].
