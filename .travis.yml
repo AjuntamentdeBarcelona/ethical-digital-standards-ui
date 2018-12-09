@@ -1,16 +1,27 @@
+distribution: xenial
 language: node_js
 node_js:
-  - "8"
+  - "10"
 before_script:
   - npm install -g gulp-cli
-script: gulp pack
+script:
+  - gulp pack
+before_deploy:
+  # Following line creates a tag name "v0" if no "v*" tag exist, or a tag "vN+1" if the largest version tag is "vN"
+  - ({ echo v0 & git tag -l v* --sort=v:refname; }) | cat
+  - export TRAVIS_TAG="v$(echo "$({ echo v0 & git tag -l v* --sort=v:refname; } | tail -n 1 | tr -d v) + 1" | bc)"
+  - echo "TRAVIS_TAG"=$TRAVIS_TAG
 deploy:
   provider: releases
-  api_key: $GITHUB_API_KEY
+  api_key: $GITHUB_TOKEN
   file:
     - build/ui-bundle.zip
   skip_cleanup: true
   on:
     repo: $TRAVIS_REPO_SLUG
-    tags: true
-  overwrite: true
+    condition: (! $TRAVIS_COMMIT_MESSAGE =~ (\[no release\]) )
+  overwrite: false
+after_deploy:
+  - git config --local user.name $(git log -1 --pretty=format:'%cn')
+  - git config --local user.email $(git log -1 --pretty=format:'%ce')
+  - git tag $TRAVIS_TAG
