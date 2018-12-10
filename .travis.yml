@@ -8,8 +8,8 @@ script:
   - gulp pack
 before_deploy:
   # Following line creates a tag name "v0" if no "v*" tag exist, or a tag "vN+1" if the largest version tag is "vN"
-  - ({ echo v0 & git tag -l v* --sort=v:refname; }) | cat
-  - export TRAVIS_TAG="v$(echo "$({ echo v0 & git tag -l v* --sort=v:refname; } | tail -n 1 | tr -d v) + 1" | bc)"
+  - ({ echo v0 ; git tag -l v* --sort=v:refname ; }) | cat
+  - export TRAVIS_TAG="v$(echo "$({ echo v0 ; git tag -l v* --sort=v:refname ; } | tail -n 1 | tr -d v) + 1" | bc)"
   - echo "TRAVIS_TAG"=$TRAVIS_TAG
 deploy:
   provider: releases
