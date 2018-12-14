@@ -27,6 +27,8 @@ const uiLocales = {
     footerText1: 'This page was built using',
     footerText2:
       'All our content is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, unless it says otherwise.We hope you find it useful.',
+    footerText3:
+      'This Project is directed by Francesca Bria, the Commissioner for Technology and Digital Innovation. Web authors: Francesca Bria, Malcolm Bain, Guillem Marpons, Javier Usobiaga, Marta Armada, Ivan Mingueza. Guides and measures authors: see on each document.',
     CCLicenseAlt: 'Creative Commons License',
     footerLegalDisclaimer: 'Legal disclaimer',
     footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/en/legal-disclaimer',
@@ -56,6 +58,8 @@ const uiLocales = {
     footerText2:
       'Todo nuestro contenido está licenciado bajo una licencia internacional Creative Commons Attribution-ShareAlike 4.0, a menos que se indique lo contrario. Esperamos que lo encuentre útil.',
     CCLicenseAlt: 'Llicència de Creative Commons',
+    footerText3:
+      'Proyecto dirigido por Francesca Bria, Comisionada de Tecnología e Innovación Digital del Ayuntamiento de Barcelona. Esta web ha sido posible gracias a Francesca Bria, Malcolm Bain, Guillem Marpons, Javier Usobiaga, Marta Armada, Ivan Mingueza. Autores de las guías y medidas: ver en cada documento.',
     footerLegalDisclaimer: 'Aviso legal',
     footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/es/aviso-legal',
   },
@@ -83,6 +87,8 @@ const uiLocales = {
     footerText1: 'Aquesta pàgina va ser creada usant',
     footerText2:
       'Tot el nostre contingut està sota una llicència Creative Commons Attribution-ShareAlike 4.0, llevat que digui el contrari. Esperem que us sigui útil.',
+    footerText3:
+      'Projecte dirigit per Francesca Bria, Comissionada de Tecnologia i Innovació Digital de l’Ajuntament de Barcelona. Aquesta web ha estat possible gràcies a Francesca Bria, Malcolm Bain, Guillem Marpons, Javier Usobiaga, Marta Armada, Ivan Mingueza. Autors de les guies i mesures: veure en cada document.',
     CCLicenseAlt: 'Llicència de Creative Commons',
     footerLegalDisclaimer: 'Avís legal',
     footerLegalDisclaimerUrl: 'https://ajuntament.barcelona.cat/digital/ca/avis-legal',
