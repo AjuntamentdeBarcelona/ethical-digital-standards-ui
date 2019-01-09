@@ -24,11 +24,13 @@ module.exports = (html) => {
 
   // Change tag of #toctitle from <div> to <h3>, to make it appear in the PDF outline.
   let toc = document.getElementById('toc')
-  let tocTitleOld = toc.querySelector('#toctitle')
-  let tocTitleNew = document.createElement('h3')
-  tocTitleNew.className = tocTitleOld.className
-  tocTitleNew.textContent = tocTitleOld.textContent
-  toc.replaceChild(tocTitleNew, tocTitleOld)
+  if (toc) {
+    let tocTitleOld = toc.querySelector('#toctitle')
+    let tocTitleNew = document.createElement('h3')
+    tocTitleNew.className = tocTitleOld.className
+    tocTitleNew.textContent = tocTitleOld.textContent
+    toc.replaceChild(tocTitleNew, tocTitleOld)
+  }
 
   let result = ''
   for (let node of document.documentElement.childNodes)
