@@ -19,7 +19,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: $TRAVIS_REPO_SLUG
-    condition: (! $TRAVIS_COMMIT_MESSAGE =~ (\[no release\]) )
   overwrite: false
 after_deploy:
   - git config --local user.name $(git log -1 --pretty=format:'%cn')
