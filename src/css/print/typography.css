@@ -48,3 +48,16 @@ h4 {
 .paragraph {
   font-size: 12px;
 }
+
+dl {
+  font-size: 12px;
+}
+
+dt {
+  font-weight: bold;
+  page-break-after: avoid;
+}
+
+dd {
+  margin-left: 0;
+}

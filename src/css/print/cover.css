@@ -1,9 +1,21 @@
 @page :first {
-  background-image: url(../img/logo.png);
-  background-position: right -2cm top -1.5cm;
+  background-image: url(../img/logo.png), url(https://licensebuttons.net/l/by-sa/4.0/88x31.png);
+  background-position: right -2cm top -1.5cm, right -1cm bottom -1.5cm;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.my-authors-class {
-  display: none;
+.pdf-authors-version {
+  width: 60%;
+  margin-top: 10rem;
+}
+
+.pdf-authors {
+  color: #777;
+}
+
+.pdf-version {
+  margin-top: 1rem;
+  color: #bdbcbc;
+  font-size: 50%;
 }
