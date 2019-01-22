@@ -61,3 +61,7 @@ dt {
 dd {
   margin-left: 0;
 }
+
+td {
+  font-size: 12px;
+}

@@ -3,6 +3,7 @@
 @import 'print/base.css';
 @import 'print/typography.css';
 @import 'print/pages.css';
+@import 'print/table.css';
 @import 'print/toc.css';
 @import 'print/summary.css';
 @import 'print/quote.css';

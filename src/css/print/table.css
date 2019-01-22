@@ -1,0 +1,42 @@
+table.tableblock {
+  border-collapse: collapse;
+  margin: 2rem 0;
+  /* enable table-layout: fixed if you want the table width to be enforced strictly */
+  /* alternative is to wrap table in div and set overflow-x: auto on the wrapper */
+  /* table-layout: fixed; */
+}
+
+table.spread {
+  width: 100%;
+}
+
+table.tableblock th,
+table.tableblock td {
+  padding: 0.5rem;
+}
+
+table.tableblock th {
+  background-color: $th-bg;
+  border: $th-border;
+  font-weight: 700;
+
+  strong {
+    font-weight: inherit;
+  }
+}
+
+table.tableblock td {
+  background-color: $td-bg;
+}
+
+.halign-left {
+  text-align: left;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.tableblock p {
+  font-size: inherit;
+}
