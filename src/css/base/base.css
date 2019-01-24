@@ -50,6 +50,7 @@ code,
 kbd,
 pre {
   font-family: $font-mono;
+  font-size: 12px;
 }
 
 b,

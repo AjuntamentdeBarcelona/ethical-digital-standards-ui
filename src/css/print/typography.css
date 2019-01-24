@@ -65,3 +65,10 @@ dd {
 td {
   font-size: 12px;
 }
+
+code,
+kbd,
+pre {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+}

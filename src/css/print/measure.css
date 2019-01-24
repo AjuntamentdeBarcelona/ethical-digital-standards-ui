@@ -1,0 +1,43 @@
+.measure .title,
+.recommendation .title,
+.alternative .title {
+  text-align: left;
+}
+
+.measure .title[data-measure-id]::before {
+  content: "Measure " attr(data-measure-id) ": ";
+}
+
+.recommendation .title[data-measure-id]::before {
+  content: "Recommendation " attr(data-measure-id) ": ";
+}
+
+.alternative .title[data-measure-id]::before {
+  content: "Alternative " attr(data-measure-id) ": ";
+}
+
+.tags ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tags li,
+.tags li p {
+  display: inline;
+}
+
+.tags li:first-of-type::before {
+  content: "Tags: ";
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #777;
+}
+
+.tags li p {
+  border-radius: 4px;
+  background: #bdbcbc;
+  padding: 2px 8px;
+}
