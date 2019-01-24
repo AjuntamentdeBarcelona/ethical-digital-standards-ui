@@ -32,6 +32,12 @@ module.exports = (html) => {
     toc.replaceChild(tocTitleNew, tocTitleOld)
   }
 
+  // Add custom attribute "data-measure-id" to measure titles
+  for (let m of document.querySelectorAll('.measure, .recommendation, .alternative')) {
+    let title = m.querySelector('.content').querySelector('.title')
+    title.setAttribute('data-measure-id', m.getAttribute('id'))
+  }
+
   let result = ''
   for (let node of document.documentElement.childNodes)
     result = result + node.innerHTML
