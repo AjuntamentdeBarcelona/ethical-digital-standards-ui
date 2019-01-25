@@ -269,7 +269,7 @@
   padding: 0;
 }
 
-.doc ul {
+.doc .ulist:not(.tags) ul {
   margin: 0;
   padding: 0 0 0 0.75rem;
   list-style: none;
@@ -279,7 +279,7 @@
   position: relative;
 }
 
-.doc ul > li::before {
+.doc .ulist:not(.tags) ul > li::before {
   content: '';
   display: block;
   width: 0.25em;
