@@ -36,7 +36,7 @@
     "handlebars-helpers": "^0.10.0",
     "highlight.js": "^9.12.0",
     "i18n-js": "^3.1.0",
-    "js-yaml": "^3.10.0",
+    "js-yaml": "^3.13.1",
     "jsdom": "^12.2.0",
     "logging-helpers": "^1.0.0",
     "map-stream": "^0.0.7",
