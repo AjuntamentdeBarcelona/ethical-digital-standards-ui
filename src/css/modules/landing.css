@@ -10,7 +10,7 @@
     margin: 0 auto;
 
     img {
-      margin-top: -10%;
+      /*margin-top: -10%;*/
       display: block;
 
       /* @media screen and (min-width: 769px) {
@@ -28,7 +28,7 @@
       font-size: 1.75rem;
       line-height: 1.1;
       margin: 0 0 0.5rem;
-      color: $white;
+      color: #3b31f5;
 
       @media screen and (min-width: 769px) {
         font-size: 2.25rem;
